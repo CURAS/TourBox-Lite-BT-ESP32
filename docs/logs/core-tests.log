@@ -1,0 +1,25 @@
+Start testing: Nov 20 18:45 CST
+----------------------------------------------------------
+1/1 Testing: bridge_core
+1/1 Test: bridge_core
+Command: "/Users/ramda/Documents/test/TourBox-Lite-BT-ESP32-NEW/tmp/host-tests/test_bridge_core"
+Directory: /Users/ramda/Documents/test/TourBox-Lite-BT-ESP32-NEW/tmp/host-tests
+"bridge_core" start time: Nov 20 18:45 CST
+Output:
+----------------------------------------------------------
+PASS: Console discovery signature, display-order device address, undirected target host
+PASS: all byte values, unlock, single-byte events, MTU limits
+PASS: disconnect/reconnect, USB removal, CCCD changes, stale packet rejection
+PASS: queue overflow rejects whole commands and preserves buffered data
+PASS: query replies, response rewriting, drop rules, all fragment splits, prefix mismatch
+PASS: prefix timeout including clock wrap, session reset, rule reply backpressure rollback
+PASS: 50,000 randomized queue operations checked against FIFO oracle
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Passed.
+"bridge_core" end time: Nov 20 18:45 CST
+"bridge_core" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 20 18:45 CST

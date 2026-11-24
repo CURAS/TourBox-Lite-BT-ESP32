@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "imported_on": "2026-11-20",
+  "capture_date": "2026-11-17",
+  "path_base": "project_root",
+  "scope": "Nine imported capture/analysis files plus the revised local capture guide, original capture tool and its license. Raw data, tool and license are byte-identical to the imported source; historical analyses only receive local document link updates. Source and current SHA-256 values are retained.",
+  "files": [
+    {
+      "path": "captures/serial-session-20261117-214847-801088.jsonl",
+      "size": 4364,
+      "source_sha256": "a388530416cebba5cf7ca8fff61b3b3996a83631bee9157e74ebff818c54254d",
+      "archived_size": 4364,
+      "archived_sha256": "a388530416cebba5cf7ca8fff61b3b3996a83631bee9157e74ebff818c54254d",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/serial-session-20261117-220137-793995.jsonl",
+      "size": 4601,
+      "source_sha256": "b271045b3a3f9627a5678be54b466ca4b3bd70c03f190459b6ebc267708c77d0",
+      "archived_size": 4601,
+      "archived_sha256": "b271045b3a3f9627a5678be54b466ca4b3bd70c03f190459b6ebc267708c77d0",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/serial-session-20261117-221137-082372.jsonl",
+      "size": 3572,
+      "source_sha256": "9f17743c6b3600783250b976153f6cddf4b4bc13e2b5c96e1467f682bc2f77aa",
+      "archived_size": 3572,
+      "archived_sha256": "9f17743c6b3600783250b976153f6cddf4b4bc13e2b5c96e1467f682bc2f77aa",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/serial-session-20261117-221234-063936.jsonl",
+      "size": 2923,
+      "source_sha256": "4039e181b161cf404579b4d27b58ea86e3a8665998311a767bb6c9f87cef4298",
+      "archived_size": 2923,
+      "archived_sha256": "4039e181b161cf404579b4d27b58ea86e3a8665998311a767bb6c9f87cef4298",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/tourbox-lite-observed-profile.json",
+      "size": 5586,
+      "source_sha256": "1491fd6f378515ba77ad8b98986a83d4c55a1ad06f9140e483159302a311e967",
+      "archived_size": 5586,
+      "archived_sha256": "1491fd6f378515ba77ad8b98986a83d4c55a1ad06f9140e483159302a311e967",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/usb-descriptors-20261117-213903-999905.json",
+      "size": 4577,
+      "source_sha256": "c371cac4237688bdc959745514aefb37f692c0dc9e36333881c9b128ba98737b",
+      "archived_size": 4577,
+      "archived_sha256": "c371cac4237688bdc959745514aefb37f692c0dc9e36333881c9b128ba98737b",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/第三轮组合与重连采集分析.md",
+      "size": 3099,
+      "source_sha256": "5235c2cdce94d5a945c00b7953f1d17b8bda8ce0eb8dc5e7698dcb2e7acc54b8",
+      "archived_size": 3099,
+      "archived_sha256": "5235c2cdce94d5a945c00b7953f1d17b8bda8ce0eb8dc5e7698dcb2e7acc54b8",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/第二轮串口采集分析.md",
+      "size": 3442,
+      "source_sha256": "49e514fc83010a5c4984431ccbde815401fca8cfebd970eb8fe9b202c06888f9",
+      "archived_size": 3442,
+      "archived_sha256": "49e514fc83010a5c4984431ccbde815401fca8cfebd970eb8fe9b202c06888f9",
+      "revised_after_import": false
+    },
+    {
+      "path": "captures/首次串口采集分析.md",
+      "size": 2443,
+      "source_sha256": "5e2b4a95f1e4aebaa235148d9f7fbf0d56c99b308b321870a28846f40272a669",
+      "archived_size": 2447,
+      "archived_sha256": "64b577105bc3c9720b0013871aeec9360c9a4c6915481104e8c96d9c4e4ea8d3",
+      "revised_after_import": true,
+      "revision_note": "Only the capture-guide link was updated to the renamed local document."
+    },
+    {
+      "path": "tourbox_lite_data_collection.md",
+      "size": 9119,
+      "source_sha256": "941ba3720a56e9a0512e6ea1aab17fb8f6f8c833ce3a49bb3fc7966bf42d5669",
+      "archived_size": 10722,
+      "archived_sha256": "29130539c55ff1de39fa31e6e0fb7b6d880429cee6e8d3f3bf64ef3730c06ba9",
+      "revised_after_import": true,
+      "revision_note": "Project-local guide updated and renamed."
+    },
+    {
+      "path": "tools/tourbox_probe.py",
+      "size": 18337,
+      "source_sha256": "e987b6324b00445dacf2adf352953590c76631dcbfd29daf0b68ff2b0869060a",
+      "archived_size": 18337,
+      "archived_sha256": "e987b6324b00445dacf2adf352953590c76631dcbfd29daf0b68ff2b0869060a",
+      "revised_after_import": false
+    },
+    {
+      "path": "third_party/tuxbox-LICENSE.txt",
+      "size": 1083,
+      "source_sha256": "4c71322165e1879d7fcd1b5ca0bb394e208a7db061a905eae1909e8de3a09012",
+      "archived_size": 1083,
+      "archived_sha256": "4c71322165e1879d7fcd1b5ca0bb394e208a7db061a905eae1909e8de3a09012",
+      "revised_after_import": false
+    }
+  ]
+}

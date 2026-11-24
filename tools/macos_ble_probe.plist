@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleIdentifier</key><string>dev.tourbox.bridge.bleprobe</string>
+    <key>CFBundleName</key><string>TourBox BLE Probe</string>
+    <key>CFBundleDisplayName</key><string>TourBox BLE Probe</string>
+    <key>CFBundleExecutable</key><string>TourBoxBLEProbe</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>NSBluetoothAlwaysUsageDescription</key><string>验证已烧录的 ESP32 TourBox 固件的蓝牙广播、GATT 服务和连接恢复。</string>
+    <key>NSBluetoothPeripheralUsageDescription</key><string>验证已烧录的 ESP32 TourBox 固件的蓝牙服务。</string>
+</dict></plist>

@@ -1,0 +1,32 @@
+START: TourBox BLE Probe
+BLUETOOTH state=5 authorization=3
+FOUND TourBox Lite id=53FE4A2D-4E83-A388-05AB-6DB90C4BF3EE services=[FFF0] RSSI=-45
+CONNECTED cycle=1 max_write=244
+SERVICE FFF0
+SERVICE Device Information
+SERVICE Battery
+CHAR FFF1 properties=16
+CHAR FFF2 properties=12
+CHAR Manufacturer Name String properties=2
+CHAR Model Number String properties=2
+CHAR Firmware Revision String properties=2
+CHAR Battery Level properties=18
+BATTERY 100%
+SUBSCRIPTION cycle=1 enabled=true
+SUBSCRIPTION cycle=1 enabled=false
+DISCONNECTED cycle=1 error=nil
+CONNECTED cycle=2 max_write=244
+SERVICE FFF0
+SERVICE Device Information
+SERVICE Battery
+CHAR FFF1 properties=16
+CHAR FFF2 properties=12
+CHAR Manufacturer Name String properties=2
+CHAR Model Number String properties=2
+CHAR Firmware Revision String properties=2
+CHAR Battery Level properties=18
+BATTERY 100%
+SUBSCRIPTION cycle=2 enabled=true
+SUBSCRIPTION cycle=2 enabled=false
+DISCONNECTED cycle=2 error=nil
+PASS: advertisement, GATT properties, battery, subscription, two connection cycles

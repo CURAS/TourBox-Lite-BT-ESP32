@@ -1,0 +1,155 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1540
+load:0x403c8700,len:0xf24
+load:0x403cb700,len:0x318c
+entry 0x403c8920
+I (24) boot: ESP-IDF v6.1.1 2nd stage bootloader
+I (25) boot: compile time Nov 20 2026 15:57:24
+I (25) boot: chip revision: v0.2
+I (25) qio_mode: Enabling default flash chip QIO
+I (29) boot.esp32s3: Boot SPI Speed : 80MHz
+I (33) boot.esp32s3: SPI Mode       : QIO
+I (37) boot.esp32s3: SPI Flash Size : 16MB
+I (41) boot: Partition Table:
+I (43) boot: ## Label            Usage          Type ST Offset   Length
+I (49) boot:  0 nvs              WiFi data        01 02 00009000 00010000
+I (56) boot:  1 phy_init         RF data          01 01 00019000 00001000
+I (62) boot:  2 factory          factory app      00 00 00020000 00300000
+I (69) esp_image: segment 0: paddr=00020020 vaddr=3c070020 size=1b694h (112276) map
+I (94) esp_image: segment 1: paddr=0003b6bc vaddr=3fc9b800 size=0495ch ( 18780) load
+I (98) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=6044ch (394316) map
+I (159) esp_image: segment 3: paddr=000a0474 vaddr=3fca015c size=002d0h (   720) load
+I (160) esp_image: segment 4: paddr=000a074c vaddr=40374000 size=1778ch ( 96140) load
+I (182) esp_image: segment 5: paddr=000b7ee0 vaddr=50000000 size=00024h (    36) load
+I (192) boot: Loaded app from partition at offset 0x20000
+I (198) octal_psram: vendor id    : 0x0d (AP)
+I (198) octal_psram: dev id       : 0x02 (generation 3)
+I (198) octal_psram: density      : 0x03 (64 Mbit)
+I (200) octal_psram: good-die     : 0x01 (Pass)
+I (204) octal_psram: Latency      : 0x01 (Fixed)
+I (209) octal_psram: VCC          : 0x01 (3V)
+I (213) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (218) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (223) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (227) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (232) octal_psram: DriveStrength: 0x00 (1/1)
+I (237) MSPI Timing: Enter psram timing tuning
+I (241) esp_psram: Found 8MB PSRAM device
+I (244) esp_psram: Speed: 80MHz
+I (247) cpu_start: Multicore app
+I (683) esp_psram: SPI SRAM memory test OK
+I (691) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (692) cpu_start: Pro cpu start user code
+I (692) cpu_start: cpu freq: 240000000 Hz
+I (694) app_init: Application information:
+I (697) app_init: Project name:     tourbox_lite_ble_bridge
+I (703) app_init: App version:      1.0.2
+I (706) app_init: Compile time:     Nov 20 2026 20:35:32
+I (711) app_init: ELF file SHA256:  db812cb4a...
+I (716) app_init: ESP-IDF:          v6.1.1
+I (720) efuse_init: Min chip rev:     v0.0
+I (723) efuse_init: Max chip rev:     v0.99 
+I (727) efuse_init: Chip rev:         v0.2
+I (731) heap_init: Initializing. RAM available for dynamic allocation:
+I (738) heap_init: At 3FCA4AE0 len 00044C30 (275 KiB): RAM
+I (743) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (748) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (753) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (758) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (765) spi_flash: detected chip: generic
+I (769) spi_flash: flash io: qio
+I (772) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (778) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (784) coexist: coex firmware version: eec362d
+I (789) coexist: coexist rom version e7ae62f
+I (793) main_task: Started on CPU0
+I (796) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (804) main_task: Calling app_main()
+I (807) app: TourBox USB-to-BLE bridge 1.0.2 / ESP-IDF v6.1.1 / 2 cores / PSRAM 8 MB
+I (824) BLE_INIT: BT controller compile version [51d9dfd]
+I (824) BLE_INIT: Using main XTAL as clock source
+I (824) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1
+I (832) BLE_INIT: Bluetooth MAC: f8:5b:1b:97:c8:de
+I (837) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10
+I (895) NimBLE: GAP procedure initiated: stop advertising.
+
+I (896) NimBLE: GAP procedure initiated: stop advertising.
+
+I (896) NimBLE: GAP procedure initiated: stop advertising.
+
+I (901) ble: Identity f8:5b:1b:97:c8:84
+I (904) NimBLE: GAP procedure initiated: advertise; 
+I (908) NimBLE: disc_mode=2
+I (911) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=160 adv_itvl_max=240
+I (920) NimBLE: 
+
+I (922) ble: Advertising TBE Lite / 0000fff0-0000-1000-8000-00805f9b34fb
+I (928) ble: 54 42 45 20 f8 5b 1b 97 c8 84 d0 11 e5 6e d1 b3
+I (933) ble: Console advertising: paired host (5s)
+I (969) ui: RGB LED GPIO48; BOOT GPIO0
+I (969) app: Bridge started. Native USB: Host GPIO19/20; debug: UART0 GPIO43/44
+I (969) main_task: Returned from app_main()
+I (1351) usb_cdc: USB device cafe:4001 address=1 candidate
+I (1353) bridge: Observed Lite profile: normalize complete rotary configuration to captured zero parameters
+I (1355) usb_cdc: TourBox USB ready: 115200 8N1, DTR=1 RTS=1
+I (4144) ble: Connected handle=1
+I (4144) NimBLE: GATT procedure initiated: exchange mtu
+
+I (4145) ble: Encryption status=0
+I (4146) NimBLE: GAP procedure initiated: 
+I (4148) NimBLE: connection parameter update; conn_handle=1 itvl_min=6 itvl_max=12 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0
+I (4160) NimBLE: 
+
+I (4162) ble: TourBox notifications enabled
+I (4474) ble: ATT MTU=247
+I (4725) ble: Connection interval=12 (1.25ms) latency=0 timeout=400 (10ms)
+I (4905) bridge: BLE -> USB (8 bytes)
+I (4906) bridge: 55 00 07 88 94 00 1a fe
+I (4906) bridge: USB TX (8 bytes)
+I (4906) bridge: 55 00 07 88 94 00 1a fe
+I (4907) NimBLE: GATT procedure initiated: notify; 
+I (4913) NimBLE: att_handle=16
+
+I (4916) bridge: USB -> BLE (26 bytes)
+I (4919) bridge: 07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b
+I (4925) bridge: 00 00 00 02 00 03 03 01 00 00
+I (5866) bridge: BLE -> USB (16 bytes)
+I (5866) bridge: d5 00 0f 46 8d f2 06 3d 2b 4c 03 76 09 18 fa fe
+I (5867) bridge: USB TX (16 bytes)
+I (5867) bridge: d5 00 0f 46 8d f2 06 3d 2b 4c 03 76 09 18 fa fe
+I (5868) NimBLE: GATT procedure initiated: notify; 
+I (5877) NimBLE: att_handle=16
+
+I (5881) bridge: USB -> BLE (12 bytes)
+I (5884) bridge: bd 9f 7a 9e 9a d3 76 6c ad 3c f4 a1
+I (6196) bridge: BLE -> USB (20 bytes)
+I (6196) bridge: b5 00 5d 04 08 05 08 06 08 07 08 08 08 09 08 0b
+I (6196) bridge: 08 0c 08 0d
+I (6226) bridge: BLE -> USB (20 bytes)
+I (6226) bridge: 08 0e 08 0f 08 26 08 27 08 28 08 29 08 3b 08 3c
+I (6226) bridge: 08 3d 08 3e
+I (6256) bridge: BLE -> USB (20 bytes)
+I (6256) bridge: 08 3f 08 40 08 41 08 42 08 43 08 44 08 45 08 46
+I (6256) bridge: 08 47 08 48
+I (6286) bridge: BLE -> USB (20 bytes)
+I (6286) bridge: 08 49 08 4a 08 4b 08 4c 08 4d 08 4e 08 4f 08 50
+I (6286) bridge: 08 51 08 52
+I (6316) bridge: BLE -> USB (14 bytes)
+I (6316) bridge: 08 53 08 54 08 a8 08 a9 08 aa 08 ab 08 fe
+I (6317) bridge: USB TX (94 bytes)
+I (6317) bridge: b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b
+I (6322) bridge: 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29
+I (6328) bridge: 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42
+I (6334) bridge: 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a
+I (6339) bridge: 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52
+I (6345) bridge: 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe
+I (30971) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596755 internal=211935 mbufs=48
+I (30971) bridge: bytes USB_RX=38 BLE_TX=38 BLE_RX=118 USB_TX=118 drops=0 rejects=0 rules=1 notify_errors=0
+I (30979) ui: UI stack watermark=1820 bytes
+I (60972) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596755 internal=211935 mbufs=48
+I (60972) bridge: bytes USB_RX=38 BLE_TX=38 BLE_RX=118 USB_TX=118 drops=0 rejects=0 rules=1 notify_errors=0
+I (60979) ui: UI stack watermark=1820 bytes

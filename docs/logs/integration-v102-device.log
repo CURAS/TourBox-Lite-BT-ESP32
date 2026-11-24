@@ -1,0 +1,1311 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1540
+load:0x403c8700,len:0xf24
+load:0x403cb700,len:0x318c
+entry 0x403c8920
+I (24) boot: ESP-IDF v6.1.1 2nd stage bootloader
+I (25) boot: compile time Nov 20 2026 15:57:24
+I (25) boot: chip revision: v0.2
+I (25) qio_mode: Enabling default flash chip QIO
+I (29) boot.esp32s3: Boot SPI Speed : 80MHz
+I (33) boot.esp32s3: SPI Mode       : QIO
+I (37) boot.esp32s3: SPI Flash Size : 16MB
+I (41) boot: Partition Table:
+I (43) boot: ## Label            Usage          Type ST Offset   Length
+I (49) boot:  0 nvs              WiFi data        01 02 00009000 00010000
+I (56) boot:  1 phy_init         RF data          01 01 00019000 00001000
+I (62) boot:  2 factory          factory app      00 00 00020000 00300000
+I (69) esp_image: segment 0: paddr=00020020 vaddr=3c070020 size=1b614h (112148) map
+I (94) esp_image: segment 1: paddr=0003b63c vaddr=3fc9b800 size=049dch ( 18908) load
+I (98) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=602dch (393948) map
+I (159) esp_image: segment 3: paddr=000a0304 vaddr=3fca01dc size=00250h (   592) load
+I (159) esp_image: segment 4: paddr=000a055c vaddr=40374000 size=1778ch ( 96140) load
+I (182) esp_image: segment 5: paddr=000b7cf0 vaddr=50000000 size=00024h (    36) load
+I (192) boot: Loaded app from partition at offset 0x20000
+I (198) octal_psram: vendor id    : 0x0d (AP)
+I (198) octal_psram: dev id       : 0x02 (generation 3)
+I (198) octal_psram: density      : 0x03 (64 Mbit)
+I (200) octal_psram: good-die     : 0x01 (Pass)
+I (204) octal_psram: Latency      : 0x01 (Fixed)
+I (209) octal_psram: VCC          : 0x01 (3V)
+I (213) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (218) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (223) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (227) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (232) octal_psram: DriveStrength: 0x00 (1/1)
+I (237) MSPI Timing: Enter psram timing tuning
+I (241) esp_psram: Found 8MB PSRAM device
+I (244) esp_psram: Speed: 80MHz
+I (247) cpu_start: Multicore app
+I (683) esp_psram: SPI SRAM memory test OK
+I (691) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (692) cpu_start: Pro cpu start user code
+I (692) cpu_start: cpu freq: 240000000 Hz
+I (693) app_init: Application information:
+I (697) app_init: Project name:     tourbox_lite_ble_bridge
+I (703) app_init: App version:      1.0.2
+I (706) app_init: Compile time:     Nov 20 2026 20:03:03
+I (711) app_init: ELF file SHA256:  b9ee0db30...
+I (716) app_init: ESP-IDF:          v6.1.1
+I (720) efuse_init: Min chip rev:     v0.0
+I (723) efuse_init: Max chip rev:     v0.99 
+I (727) efuse_init: Chip rev:         v0.2
+I (731) heap_init: Initializing. RAM available for dynamic allocation:
+I (737) heap_init: At 3FCA4AE0 len 00044C30 (275 KiB): RAM
+I (743) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (748) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (753) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (758) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (765) spi_flash: detected chip: generic
+I (768) spi_flash: flash io: qio
+I (772) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (778) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (784) coexist: coex firmware version: eec362d
+I (789) coexist: coexist rom version e7ae62f
+I (793) main_task: Started on CPU0
+I (796) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (804) main_task: Calling app_main()
+I (807) app: TourBox USB-to-BLE bridge 1.0.2 / ESP-IDF v6.1.1 / 2 cores / PSRAM 8 MB
+I (820) BLE_INIT: BT controller compile version [51d9dfd]
+I (820) BLE_INIT: Using main XTAL as clock source
+I (824) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1
+I (832) BLE_INIT: Bluetooth MAC: f8:5b:1b:97:c8:de
+I (837) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10
+I (883) NimBLE: GAP procedure initiated: stop advertising.
+
+I (884) NimBLE: GAP procedure initiated: stop advertising.
+
+I (886) ble: Identity f8:5b:1b:97:c8:84
+I (887) NimBLE: GAP procedure initiated: advertise; 
+I (891) NimBLE: disc_mode=2
+I (894) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=160 adv_itvl_max=240
+I (903) NimBLE: 
+
+I (906) ble: Advertising TBE Lite / 0000fff0-0000-1000-8000-00805f9b34fb
+I (911) ble: 54 42 45 20 f8 5b 1b 97 c8 84 00 00 00 00 00 00
+I (948) ui: RGB LED GPIO48; BOOT GPIO0
+I (948) app: Bridge started. Native USB: Host GPIO19/20; debug: UART0 GPIO43/44
+I (948) main_task: Returned from app_main()
+I (1330) usb_cdc: USB device cafe:4001 address=1 candidate
+I (1332) bridge: Observed Lite profile: normalize complete rotary configuration to captured zero parameters
+I (1334) usb_cdc: TourBox USB ready: 115200 8N1, DTR=1 RTS=1
+I (30949) bridge: USB=ready BLE=advertising notify=0 MTU=23 queued=0/0 heap=8596931 internal=212111 mbufs=48
+I (30949) bridge: bytes USB_RX=0 BLE_TX=0 BLE_RX=0 USB_TX=0 drops=0 rejects=0 rules=0 notify_errors=0
+I (30956) ui: UI stack watermark=1808 bytes
+I (60950) bridge: USB=ready BLE=advertising notify=0 MTU=23 queued=0/0 heap=8596931 internal=212111 mbufs=48
+I (60950) bridge: bytes USB_RX=0 BLE_TX=0 BLE_RX=0 USB_TX=0 drops=0 rejects=0 rules=0 notify_errors=0
+I (60957) ui: UI stack watermark=1808 bytes
+I (83754) ble: Connected handle=1
+I (83754) NimBLE: GATT procedure initiated: exchange mtu
+
+I (84054) ble: ATT MTU=247
+I (87924) ble: Encryption status=1288
+I (89305) ble: Disconnected reason=531
+I (89305) NimBLE: GAP procedure initiated: advertise; 
+I (89306) NimBLE: disc_mode=2
+I (89306) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=160 adv_itvl_max=240
+I (89314) NimBLE: 
+
+I (89317) ble: Advertising TBE Lite / 0000fff0-0000-1000-8000-00805f9b34fb
+I (89323) ble: 54 42 45 20 f8 5b 1b 97 c8 84 00 00 00 00 00 00
+I (90959) bridge: USB=ready BLE=advertising notify=0 MTU=23 queued=0/0 heap=8596903 internal=212083 mbufs=48
+I (90959) bridge: bytes USB_RX=0 BLE_TX=0 BLE_RX=0 USB_TX=0 drops=0 rejects=0 rules=0 notify_errors=0
+I (90966) ui: UI stack watermark=1808 bytes
+I (97464) ble: Connected handle=1
+I (97465) NimBLE: GATT procedure initiated: exchange mtu
+
+I (97764) ble: ATT MTU=247
+I (101519) NimBLE: GAP procedure initiated: stop advertising.
+
+I (101522) ble: Encryption status=0
+I (101526) NimBLE: GAP procedure initiated: 
+I (101526) NimBLE: connection parameter update; conn_handle=1 itvl_min=6 itvl_max=12 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0
+I (101534) NimBLE: 
+
+I (101536) ble: TourBox notifications enabled
+I (101635) bridge: BLE -> USB (8 bytes)
+I (101636) NimBLE: GATT procedure initiated: notify; 
+I (101636) NimBLE: att_handle=16
+
+I (101636) bridge: 55 00 07 88 94 00 1a fe
+I (101640) bridge: USB TX (8 bytes)
+I (101643) bridge: 55 00 07 88 94 00 1a fe
+I (101647) bridge: USB -> BLE (26 bytes)
+I (101650) bridge: 07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b
+I (101656) bridge: 00 00 00 02 00 03 03 01 00 00
+I (101755) bridge: BLE -> USB (8 bytes)
+I (101756) NimBLE: GATT procedure initiated: notify; 
+I (101756) NimBLE: att_handle=16
+
+I (101756) bridge: 55 00 07 88 94 00 1a fe
+I (101760) bridge: USB TX (8 bytes)
+I (101763) bridge: 55 00 07 88 94 00 1a fe
+I (101767) bridge: USB -> BLE (26 bytes)
+I (101770) bridge: 07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b
+I (101776) bridge: 00 00 00 02 00 03 03 01 00 00
+I (101816) ble: Connection interval=12 (1.25ms) latency=0 timeout=400 (10ms)
+I (102027) ble: Saved paired Console host d0:11:e5:6e:d1:b3 for reconnect advertising
+I (103001) ble: TourBox notifications disabled
+I (103002) ble: Disconnected reason=531
+I (103002) NimBLE: GAP procedure initiated: advertise; 
+I (103003) NimBLE: disc_mode=2
+I (103006) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=160 adv_itvl_max=240
+I (103015) NimBLE: 
+
+I (103018) ble: Advertising TBE Lite / 0000fff0-0000-1000-8000-00805f9b34fb
+I (103024) ble: 54 42 45 20 f8 5b 1b 97 c8 84 d0 11 e5 6e d1 b3
+I (109975) ble: Connected handle=1
+I (109975) NimBLE: GATT procedure initiated: exchange mtu
+
+I (109977) ble: Encryption status=0
+I (109977) NimBLE: GAP procedure initiated: 
+I (109980) NimBLE: connection parameter update; conn_handle=1 itvl_min=6 itvl_max=12 latency=0 supervision_timeout=400 min_ce_len=0 max_ce_len=0
+I (109992) NimBLE: 
+
+I (109995) ble: TourBox notifications enabled
+I (110305) ble: ATT MTU=247
+I (110547) ble: Connection interval=12 (1.25ms) latency=0 timeout=400 (10ms)
+I (110728) bridge: BLE -> USB (8 bytes)
+I (110728) bridge: 55 00 07 88 94 00 1a fe
+I (110729) bridge: USB TX (8 bytes)
+I (110729) bridge: 55 00 07 88 94 00 1a fe
+I (110730) NimBLE: GATT procedure initiated: notify; 
+I (110736) NimBLE: att_handle=16
+
+I (110740) bridge: USB -> BLE (26 bytes)
+I (110743) bridge: 07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b
+I (110749) bridge: 00 00 00 02 00 03 03 01 00 00
+I (111703) bridge: BLE -> USB (16 bytes)
+I (111703) bridge: d5 00 0f 1a ce 69 a2 92 c6 3b 2b c6 20 68 4b fe
+I (111704) bridge: USB TX (16 bytes)
+I (111705) NimBLE: GATT procedure initiated: notify; 
+I (111710) NimBLE: att_handle=16
+
+I (111713) bridge: d5 00 0f 1a ce 69 a2 92 c6 3b 2b c6 20 68 4b fe
+I (111719) bridge: USB -> BLE (12 bytes)
+I (111722) bridge: e1 dc e1 3a 35 3e 01 44 1d 15 84 10
+I (111928) bridge: BLE -> USB (20 bytes)
+I (111928) bridge: b5 00 5d 04 08 05 08 06 08 07 08 08 08 09 08 0b
+I (111928) bridge: 08 0c 08 0d
+I (111958) bridge: BLE -> USB (20 bytes)
+I (111958) bridge: 08 0e 08 0f 08 26 08 27 08 28 08 29 08 3b 08 3c
+I (111958) bridge: 08 3d 08 3e
+I (111988) bridge: BLE -> USB (20 bytes)
+I (111988) bridge: 08 3f 08 40 08 41 08 42 08 43 08 44 08 45 08 46
+I (111988) bridge: 08 47 08 48
+I (112018) bridge: BLE -> USB (20 bytes)
+I (112018) bridge: 08 49 08 4a 08 4b 08 4c 08 4d 08 4e 08 4f 08 50
+I (112018) bridge: 08 51 08 52
+I (112048) bridge: BLE -> USB (14 bytes)
+I (112048) bridge: 08 53 08 54 08 a8 08 a9 08 aa 08 ab 08 fe
+I (112048) bridge: USB TX (94 bytes)
+I (112050) bridge: b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b
+I (112055) bridge: 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29
+I (112061) bridge: 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42
+I (112067) bridge: 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a
+I (112073) bridge: 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52
+I (112079) bridge: 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe
+I (114166) bridge: USB -> BLE (1 bytes)
+I (114166) bridge: 09
+I (114166) NimBLE: GATT procedure initiated: notify; 
+I (114166) NimBLE: att_handle=16
+
+I (114204) bridge: USB -> BLE (1 bytes)
+I (114204) bridge: 09
+I (114204) NimBLE: GATT procedure initiated: notify; 
+I (114204) NimBLE: att_handle=16
+
+I (114240) bridge: USB -> BLE (1 bytes)
+I (114241) bridge: 09
+I (114241) NimBLE: GATT procedure initiated: notify; 
+I (114241) NimBLE: att_handle=16
+
+I (114271) bridge: USB -> BLE (1 bytes)
+I (114272) bridge: 09
+I (114272) NimBLE: GATT procedure initiated: notify; 
+I (114272) NimBLE: att_handle=16
+
+I (114412) bridge: USB -> BLE (1 bytes)
+I (114413) bridge: 49
+I (114413) NimBLE: GATT procedure initiated: notify; 
+I (114413) NimBLE: att_handle=16
+
+I (114448) bridge: USB -> BLE (1 bytes)
+I (114448) bridge: 49
+I (114448) NimBLE: GATT procedure initiated: notify; 
+I (114448) NimBLE: att_handle=16
+
+I (114487) bridge: USB -> BLE (1 bytes)
+I (114488) bridge: 49
+I (114488) NimBLE: GATT procedure initiated: notify; 
+I (114488) NimBLE: att_handle=16
+
+I (114522) bridge: USB -> BLE (1 bytes)
+I (114523) bridge: 49
+I (114523) NimBLE: GATT procedure initiated: notify; 
+I (114523) NimBLE: att_handle=16
+
+I (114557) bridge: USB -> BLE (1 bytes)
+I (114557) bridge: 49
+I (114557) NimBLE: GATT procedure initiated: notify; 
+I (114557) NimBLE: att_handle=16
+
+I (114590) bridge: USB -> BLE (1 bytes)
+I (114590) bridge: 49
+I (114590) NimBLE: GATT procedure initiated: notify; 
+I (114590) NimBLE: att_handle=16
+
+I (114632) bridge: USB -> BLE (1 bytes)
+I (114633) bridge: 49
+I (114633) NimBLE: GATT procedure initiated: notify; 
+I (114633) NimBLE: att_handle=16
+
+I (114809) bridge: USB -> BLE (1 bytes)
+I (114810) bridge: 09
+I (114810) NimBLE: GATT procedure initiated: notify; 
+I (114810) NimBLE: att_handle=16
+
+I (114858) bridge: USB -> BLE (1 bytes)
+I (114858) bridge: 09
+I (114858) NimBLE: GATT procedure initiated: notify; 
+I (114858) NimBLE: att_handle=16
+
+I (114896) bridge: USB -> BLE (1 bytes)
+I (114897) bridge: 09
+I (114897) NimBLE: GATT procedure initiated: notify; 
+I (114897) NimBLE: att_handle=16
+
+I (114938) bridge: USB -> BLE (1 bytes)
+I (114939) bridge: 09
+I (114939) NimBLE: GATT procedure initiated: notify; 
+I (114939) NimBLE: att_handle=16
+
+I (115010) bridge: USB -> BLE (1 bytes)
+I (115011) bridge: 09
+I (115011) NimBLE: GATT procedure initiated: notify; 
+I (115011) NimBLE: att_handle=16
+
+I (115065) bridge: USB -> BLE (1 bytes)
+I (115065) bridge: 49
+I (115065) NimBLE: GATT procedure initiated: notify; 
+I (115065) NimBLE: att_handle=16
+
+I (115106) bridge: USB -> BLE (1 bytes)
+I (115107) bridge: 49
+I (115107) NimBLE: GATT procedure initiated: notify; 
+I (115107) NimBLE: att_handle=16
+
+I (115146) bridge: USB -> BLE (1 bytes)
+I (115147) bridge: 49
+I (115147) NimBLE: GATT procedure initiated: notify; 
+I (115147) NimBLE: att_handle=16
+
+I (115195) bridge: USB -> BLE (1 bytes)
+I (115195) bridge: 49
+I (115195) NimBLE: GATT procedure initiated: notify; 
+I (115195) NimBLE: att_handle=16
+
+I (115375) bridge: USB -> BLE (1 bytes)
+I (115376) bridge: 09
+I (115376) NimBLE: GATT procedure initiated: notify; 
+I (115376) NimBLE: att_handle=16
+
+I (115408) bridge: USB -> BLE (1 bytes)
+I (115408) bridge: 09
+I (115408) NimBLE: GATT procedure initiated: notify; 
+I (115408) NimBLE: att_handle=16
+
+I (115444) bridge: USB -> BLE (1 bytes)
+I (115444) bridge: 09
+I (115444) NimBLE: GATT procedure initiated: notify; 
+I (115444) NimBLE: att_handle=16
+
+I (115587) bridge: USB -> BLE (1 bytes)
+I (115588) bridge: 49
+I (115588) NimBLE: GATT procedure initiated: notify; 
+I (115588) NimBLE: att_handle=16
+
+I (115626) bridge: USB -> BLE (1 bytes)
+I (115626) bridge: 49
+I (115626) NimBLE: GATT procedure initiated: notify; 
+I (115626) NimBLE: att_handle=16
+
+I (115681) bridge: USB -> BLE (1 bytes)
+I (115681) NimBLE: GATT procedure initiated: notify; 
+I (115682) NimBLE: att_handle=16
+
+I (115682) bridge: 49
+I (116672) bridge: USB -> BLE (1 bytes)
+I (116672) bridge: 04
+I (116672) NimBLE: GATT procedure initiated: notify; 
+I (116673) NimBLE: att_handle=16
+
+I (116736) bridge: USB -> BLE (1 bytes)
+I (116737) bridge: 04
+I (116737) NimBLE: GATT procedure initiated: notify; 
+I (116737) NimBLE: att_handle=16
+
+I (116775) bridge: USB -> BLE (1 bytes)
+I (116776) bridge: 04
+I (116776) NimBLE: GATT procedure initiated: notify; 
+I (116776) NimBLE: att_handle=16
+
+I (116811) bridge: USB -> BLE (1 bytes)
+I (116812) bridge: 04
+I (116812) NimBLE: GATT procedure initiated: notify; 
+I (116812) NimBLE: att_handle=16
+
+I (116852) bridge: USB -> BLE (1 bytes)
+I (116853) bridge: 04
+I (116853) NimBLE: GATT procedure initiated: notify; 
+I (116853) NimBLE: att_handle=16
+
+I (116895) bridge: USB -> BLE (1 bytes)
+I (116895) bridge: 04
+I (116895) NimBLE: GATT procedure initiated: notify; 
+I (116896) NimBLE: att_handle=16
+
+I (116940) bridge: USB -> BLE (1 bytes)
+I (116941) NimBLE: GATT procedure initiated: notify; 
+I (116941) NimBLE: att_handle=16
+
+I (116941) bridge: 04
+I (117029) bridge: USB -> BLE (1 bytes)
+I (117029) bridge: 04
+I (117029) NimBLE: GATT procedure initiated: notify; 
+I (117030) NimBLE: att_handle=16
+
+I (117119) bridge: USB -> BLE (1 bytes)
+I (117119) bridge: 44
+I (117119) NimBLE: GATT procedure initiated: notify; 
+I (117120) NimBLE: att_handle=16
+
+I (117150) bridge: USB -> BLE (1 bytes)
+I (117151) bridge: 44
+I (117151) NimBLE: GATT procedure initiated: notify; 
+I (117151) NimBLE: att_handle=16
+
+I (117177) bridge: USB -> BLE (1 bytes)
+I (117178) bridge: 44
+I (117178) NimBLE: GATT procedure initiated: notify; 
+I (117178) NimBLE: att_handle=16
+
+I (117203) bridge: USB -> BLE (1 bytes)
+I (117203) bridge: 44
+I (117203) NimBLE: GATT procedure initiated: notify; 
+I (117204) NimBLE: att_handle=16
+
+I (117225) bridge: USB -> BLE (1 bytes)
+I (117225) bridge: 44
+I (117225) NimBLE: GATT procedure initiated: notify; 
+I (117226) NimBLE: att_handle=16
+
+I (117250) bridge: USB -> BLE (1 bytes)
+I (117251) bridge: 44
+I (117251) NimBLE: GATT procedure initiated: notify; 
+I (117251) NimBLE: att_handle=16
+
+I (117285) bridge: USB -> BLE (1 bytes)
+I (117286) bridge: 44
+I (117286) NimBLE: GATT procedure initiated: notify; 
+I (117286) NimBLE: att_handle=16
+
+I (117352) bridge: USB -> BLE (1 bytes)
+I (117353) NimBLE: GATT procedure initiated: notify; 
+I (117353) NimBLE: att_handle=16
+
+I (117353) bridge: 44
+I (117564) bridge: USB -> BLE (1 bytes)
+I (117564) bridge: 04
+I (117564) NimBLE: GATT procedure initiated: notify; 
+I (117565) NimBLE: att_handle=16
+
+I (117605) bridge: USB -> BLE (1 bytes)
+I (117605) bridge: 04
+I (117605) NimBLE: GATT procedure initiated: notify; 
+I (117606) NimBLE: att_handle=16
+
+I (117637) bridge: USB -> BLE (1 bytes)
+I (117637) bridge: 04
+I (117637) NimBLE: GATT procedure initiated: notify; 
+I (117638) NimBLE: att_handle=16
+
+I (117665) bridge: USB -> BLE (1 bytes)
+I (117666) bridge: 04
+I (117666) NimBLE: GATT procedure initiated: notify; 
+I (117666) NimBLE: att_handle=16
+
+I (117686) bridge: USB -> BLE (1 bytes)
+I (117687) bridge: 04
+I (117687) NimBLE: GATT procedure initiated: notify; 
+I (117687) NimBLE: att_handle=16
+
+I (117709) bridge: USB -> BLE (1 bytes)
+I (117709) bridge: 04
+I (117709) NimBLE: GATT procedure initiated: notify; 
+I (117710) NimBLE: att_handle=16
+
+I (117737) bridge: USB -> BLE (1 bytes)
+I (117738) bridge: 04
+I (117738) NimBLE: GATT procedure initiated: notify; 
+I (117738) NimBLE: att_handle=16
+
+I (117767) bridge: USB -> BLE (1 bytes)
+I (117768) bridge: 04
+I (117768) NimBLE: GATT procedure initiated: notify; 
+I (117768) NimBLE: att_handle=16
+
+I (117792) bridge: USB -> BLE (1 bytes)
+I (117792) NimBLE: GATT procedure initiated: notify; 
+I (117793) NimBLE: att_handle=16
+
+I (117793) bridge: 04
+I (117845) bridge: USB -> BLE (1 bytes)
+I (117845) bridge: 04
+I (117845) NimBLE: GATT procedure initiated: notify; 
+I (117846) NimBLE: att_handle=16
+
+I (117976) bridge: USB -> BLE (1 bytes)
+I (117977) bridge: 44
+I (117977) NimBLE: GATT procedure initiated: notify; 
+I (117977) NimBLE: att_handle=16
+
+I (118002) bridge: USB -> BLE (1 bytes)
+I (118003) NimBLE: GATT procedure initiated: notify; 
+I (118003) NimBLE: att_handle=16
+
+I (118004) bridge: 44
+I (118024) bridge: USB -> BLE (1 bytes)
+I (118024) bridge: 44
+I (118024) NimBLE: GATT procedure initiated: notify; 
+I (118024) NimBLE: att_handle=16
+
+I (118045) bridge: USB -> BLE (1 bytes)
+I (118045) bridge: 44
+I (118045) NimBLE: GATT procedure initiated: notify; 
+I (118046) NimBLE: att_handle=16
+
+I (118065) bridge: USB -> BLE (1 bytes)
+I (118066) bridge: 44
+I (118066) NimBLE: GATT procedure initiated: notify; 
+I (118066) NimBLE: att_handle=16
+
+I (118089) bridge: USB -> BLE (1 bytes)
+I (118090) bridge: 44
+I (118090) NimBLE: GATT procedure initiated: notify; 
+I (118090) NimBLE: att_handle=16
+
+I (118114) bridge: USB -> BLE (1 bytes)
+I (118114) bridge: 44
+I (118114) NimBLE: GATT procedure initiated: notify; 
+I (118115) NimBLE: att_handle=16
+
+I (118149) bridge: USB -> BLE (1 bytes)
+I (118150) bridge: 44
+I (118150) NimBLE: GATT procedure initiated: notify; 
+I (118150) NimBLE: att_handle=16
+
+I (118295) bridge: USB -> BLE (1 bytes)
+I (118296) bridge: 04
+I (118296) NimBLE: GATT procedure initiated: notify; 
+I (118296) NimBLE: att_handle=16
+
+I (118348) bridge: USB -> BLE (1 bytes)
+I (118348) bridge: 04
+I (118348) NimBLE: GATT procedure initiated: notify; 
+I (118349) NimBLE: att_handle=16
+
+I (118371) bridge: USB -> BLE (1 bytes)
+I (118372) bridge: 04
+I (118372) NimBLE: GATT procedure initiated: notify; 
+I (118372) NimBLE: att_handle=16
+
+I (118402) bridge: USB -> BLE (1 bytes)
+I (118402) bridge: 04
+I (118402) NimBLE: GATT procedure initiated: notify; 
+I (118403) NimBLE: att_handle=16
+
+I (118433) bridge: USB -> BLE (1 bytes)
+I (118433) bridge: 04
+I (118433) NimBLE: GATT procedure initiated: notify; 
+I (118434) NimBLE: att_handle=16
+
+I (118470) bridge: USB -> BLE (1 bytes)
+I (118470) bridge: 04
+I (118470) NimBLE: GATT procedure initiated: notify; 
+I (118471) NimBLE: att_handle=16
+
+I (118519) bridge: USB -> BLE (1 bytes)
+I (118519) bridge: 04
+I (118519) NimBLE: GATT procedure initiated: notify; 
+I (118520) NimBLE: att_handle=16
+
+I (118605) bridge: USB -> BLE (1 bytes)
+I (118606) NimBLE: GATT procedure initiated: notify; 
+I (118606) NimBLE: att_handle=16
+
+I (118606) bridge: 04
+I (118666) bridge: USB -> BLE (1 bytes)
+I (118667) bridge: 04
+I (118667) NimBLE: GATT procedure initiated: notify; 
+I (118667) NimBLE: att_handle=16
+
+I (118731) bridge: USB -> BLE (1 bytes)
+I (118732) bridge: 04
+I (118732) NimBLE: GATT procedure initiated: notify; 
+I (118732) NimBLE: att_handle=16
+
+I (118788) bridge: USB -> BLE (1 bytes)
+I (118789) bridge: 04
+I (118789) NimBLE: GATT procedure initiated: notify; 
+I (118789) NimBLE: att_handle=16
+
+I (119275) bridge: USB -> BLE (1 bytes)
+I (119276) NimBLE: GATT procedure initiated: notify; 
+I (119276) NimBLE: att_handle=16
+
+I (119277) bridge: 04
+I (119326) bridge: USB -> BLE (1 bytes)
+I (119326) bridge: 04
+I (119326) NimBLE: GATT procedure initiated: notify; 
+I (119327) NimBLE: att_handle=16
+
+I (119362) bridge: USB -> BLE (1 bytes)
+I (119362) bridge: 04
+I (119362) NimBLE: GATT procedure initiated: notify; 
+I (119363) NimBLE: att_handle=16
+
+I (119393) bridge: USB -> BLE (1 bytes)
+I (119394) bridge: 04
+I (119394) NimBLE: GATT procedure initiated: notify; 
+I (119394) NimBLE: att_handle=16
+
+I (119688) bridge: USB -> BLE (1 bytes)
+I (119688) bridge: 04
+I (119688) NimBLE: GATT procedure initiated: notify; 
+I (119689) NimBLE: att_handle=16
+
+I (120037) bridge: USB -> BLE (1 bytes)
+I (120037) bridge: 04
+I (120037) NimBLE: GATT procedure initiated: notify; 
+I (120038) NimBLE: att_handle=16
+
+I (120092) bridge: USB -> BLE (1 bytes)
+I (120093) bridge: 04
+I (120093) NimBLE: GATT procedure initiated: notify; 
+I (120093) NimBLE: att_handle=16
+
+I (120127) bridge: USB -> BLE (1 bytes)
+I (120127) bridge: 04
+I (120127) NimBLE: GATT procedure initiated: notify; 
+I (120128) NimBLE: att_handle=16
+
+I (120168) bridge: USB -> BLE (1 bytes)
+I (120169) bridge: 04
+I (120169) NimBLE: GATT procedure initiated: notify; 
+I (120169) NimBLE: att_handle=16
+
+I (120212) bridge: USB -> BLE (1 bytes)
+I (120213) bridge: 04
+I (120213) NimBLE: GATT procedure initiated: notify; 
+I (120213) NimBLE: att_handle=16
+
+I (120260) bridge: USB -> BLE (1 bytes)
+I (120261) bridge: 04
+I (120261) NimBLE: GATT procedure initiated: notify; 
+I (120261) NimBLE: att_handle=16
+
+I (120304) bridge: USB -> BLE (1 bytes)
+I (120304) bridge: 04
+I (120304) NimBLE: GATT procedure initiated: notify; 
+I (120305) NimBLE: att_handle=16
+
+I (120364) bridge: USB -> BLE (1 bytes)
+I (120365) bridge: 04
+I (120365) NimBLE: GATT procedure initiated: notify; 
+I (120365) NimBLE: att_handle=16
+
+I (120410) bridge: USB -> BLE (1 bytes)
+I (120411) bridge: 04
+I (120411) NimBLE: GATT procedure initiated: notify; 
+I (120411) NimBLE: att_handle=16
+
+I (120482) bridge: USB -> BLE (1 bytes)
+I (120482) bridge: 04
+I (120482) NimBLE: GATT procedure initiated: notify; 
+I (120483) NimBLE: att_handle=16
+
+I (120534) bridge: USB -> BLE (1 bytes)
+I (120534) bridge: 04
+I (120534) NimBLE: GATT procedure initiated: notify; 
+I (120535) NimBLE: att_handle=16
+
+I (120585) bridge: USB -> BLE (1 bytes)
+I (120586) bridge: 04
+I (120586) NimBLE: GATT procedure initiated: notify; 
+I (120586) NimBLE: att_handle=16
+
+I (120687) bridge: USB -> BLE (1 bytes)
+I (120688) bridge: 04
+I (120688) NimBLE: GATT procedure initiated: notify; 
+I (120688) NimBLE: att_handle=16
+
+I (120769) bridge: USB -> BLE (1 bytes)
+I (120770) bridge: 04
+I (120770) NimBLE: GATT procedure initiated: notify; 
+I (120770) NimBLE: att_handle=16
+
+I (120899) bridge: USB -> BLE (1 bytes)
+I (120899) bridge: 04
+I (120899) NimBLE: GATT procedure initiated: notify; 
+I (120900) NimBLE: att_handle=16
+
+I (120945) bridge: USB -> BLE (1 bytes)
+I (120946) bridge: 04
+I (120946) NimBLE: GATT procedure initiated: notify; 
+I (120946) NimBLE: att_handle=16
+
+I (120968) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (120968) bridge: bytes USB_RX=182 BLE_TX=182 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (120976) ui: UI stack watermark=1808 bytes
+I (120982) bridge: USB -> BLE (1 bytes)
+I (120983) NimBLE: GATT procedure initiated: notify; 
+I (120988) NimBLE: att_handle=16
+
+I (120992) bridge: 04
+I (121042) bridge: USB -> BLE (1 bytes)
+I (121042) NimBLE: GATT procedure initiated: notify; 
+I (121043) NimBLE: att_handle=16
+
+I (121043) bridge: 04
+I (121077) bridge: USB -> BLE (1 bytes)
+I (121078) bridge: 04
+I (121078) NimBLE: GATT procedure initiated: notify; 
+I (121078) NimBLE: att_handle=16
+
+I (121121) bridge: USB -> BLE (1 bytes)
+I (121122) NimBLE: GATT procedure initiated: notify; 
+I (121122) NimBLE: att_handle=16
+
+I (121123) bridge: 04
+I (121157) bridge: USB -> BLE (1 bytes)
+I (121158) bridge: 04
+I (121158) NimBLE: GATT procedure initiated: notify; 
+I (121158) NimBLE: att_handle=16
+
+I (121200) bridge: USB -> BLE (1 bytes)
+I (121200) bridge: 04
+I (121200) NimBLE: GATT procedure initiated: notify; 
+I (121201) NimBLE: att_handle=16
+
+I (121262) bridge: USB -> BLE (1 bytes)
+I (121262) bridge: 04
+I (121262) NimBLE: GATT procedure initiated: notify; 
+I (121263) NimBLE: att_handle=16
+
+I (121390) bridge: USB -> BLE (1 bytes)
+I (121391) bridge: 04
+I (121391) NimBLE: GATT procedure initiated: notify; 
+I (121391) NimBLE: att_handle=16
+
+I (121505) bridge: USB -> BLE (1 bytes)
+I (121505) bridge: 04
+I (121505) NimBLE: GATT procedure initiated: notify; 
+I (121506) NimBLE: att_handle=16
+
+I (122858) bridge: USB -> BLE (1 bytes)
+I (122858) bridge: 09
+I (122859) NimBLE: GATT procedure initiated: notify; 
+I (122859) NimBLE: att_handle=16
+
+I (122944) bridge: USB -> BLE (1 bytes)
+I (122945) NimBLE: GATT procedure initiated: notify; 
+I (122945) NimBLE: att_handle=16
+
+I (122946) bridge: 09
+I (123017) bridge: USB -> BLE (1 bytes)
+I (123017) bridge: 09
+I (123018) NimBLE: GATT procedure initiated: notify; 
+I (123018) NimBLE: att_handle=16
+
+I (123065) bridge: USB -> BLE (1 bytes)
+I (123066) bridge: 09
+I (123066) NimBLE: GATT procedure initiated: notify; 
+I (123066) NimBLE: att_handle=16
+
+I (123141) bridge: USB -> BLE (1 bytes)
+I (123141) bridge: 09
+I (123142) NimBLE: GATT procedure initiated: notify; 
+I (123142) NimBLE: att_handle=16
+
+I (123226) bridge: USB -> BLE (1 bytes)
+I (123227) bridge: 09
+I (123227) NimBLE: GATT procedure initiated: notify; 
+I (123227) NimBLE: att_handle=16
+
+I (123378) bridge: USB -> BLE (1 bytes)
+I (123378) bridge: 09
+I (123379) NimBLE: GATT procedure initiated: notify; 
+I (123379) NimBLE: att_handle=16
+
+I (123701) bridge: USB -> BLE (1 bytes)
+I (123702) NimBLE: GATT procedure initiated: notify; 
+I (123702) NimBLE: att_handle=16
+
+I (123702) bridge: 49
+I (123800) bridge: USB -> BLE (1 bytes)
+I (123800) bridge: 49
+I (123801) NimBLE: GATT procedure initiated: notify; 
+I (123801) NimBLE: att_handle=16
+
+I (123858) bridge: USB -> BLE (1 bytes)
+I (123859) bridge: 49
+I (123859) NimBLE: GATT procedure initiated: notify; 
+I (123859) NimBLE: att_handle=16
+
+I (123906) bridge: USB -> BLE (1 bytes)
+I (123907) bridge: 49
+I (123907) NimBLE: GATT procedure initiated: notify; 
+I (123907) NimBLE: att_handle=16
+
+I (123933) bridge: USB -> BLE (1 bytes)
+I (123934) bridge: 49
+I (123934) NimBLE: GATT procedure initiated: notify; 
+I (123934) NimBLE: att_handle=16
+
+I (123957) bridge: USB -> BLE (1 bytes)
+I (123958) NimBLE: GATT procedure initiated: notify; 
+I (123958) NimBLE: att_handle=16
+
+I (123958) bridge: 49
+I (124318) bridge: USB -> BLE (1 bytes)
+I (124318) bridge: 49
+I (124318) NimBLE: GATT procedure initiated: notify; 
+I (124318) NimBLE: att_handle=16
+
+I (124361) bridge: USB -> BLE (1 bytes)
+I (124361) bridge: 49
+I (124361) NimBLE: GATT procedure initiated: notify; 
+I (124361) NimBLE: att_handle=16
+
+I (124391) bridge: USB -> BLE (1 bytes)
+I (124392) NimBLE: GATT procedure initiated: notify; 
+I (124392) NimBLE: att_handle=16
+
+I (124392) bridge: 49
+I (124419) bridge: USB -> BLE (1 bytes)
+I (124419) bridge: 49
+I (124420) NimBLE: GATT procedure initiated: notify; 
+I (124420) NimBLE: att_handle=16
+
+I (126782) bridge: USB -> BLE (1 bytes)
+I (126782) bridge: 09
+I (126783) NimBLE: GATT procedure initiated: notify; 
+I (126783) NimBLE: att_handle=16
+
+I (126830) bridge: USB -> BLE (1 bytes)
+I (126830) bridge: 09
+I (126831) NimBLE: GATT procedure initiated: notify; 
+I (126831) NimBLE: att_handle=16
+
+I (126875) bridge: USB -> BLE (1 bytes)
+I (126875) bridge: 09
+I (126876) NimBLE: GATT procedure initiated: notify; 
+I (126876) NimBLE: att_handle=16
+
+I (127203) bridge: USB -> BLE (1 bytes)
+I (127203) bridge: 09
+I (127204) NimBLE: GATT procedure initiated: notify; 
+I (127204) NimBLE: att_handle=16
+
+I (127239) bridge: USB -> BLE (1 bytes)
+I (127239) bridge: 09
+I (127240) NimBLE: GATT procedure initiated: notify; 
+I (127240) NimBLE: att_handle=16
+
+I (127285) bridge: USB -> BLE (1 bytes)
+I (127285) bridge: 09
+I (127285) NimBLE: GATT procedure initiated: notify; 
+I (127285) NimBLE: att_handle=16
+
+I (127321) bridge: USB -> BLE (1 bytes)
+I (127321) bridge: 09
+I (127322) NimBLE: GATT procedure initiated: notify; 
+I (127322) NimBLE: att_handle=16
+
+I (127376) bridge: USB -> BLE (1 bytes)
+I (127377) NimBLE: GATT procedure initiated: notify; 
+I (127377) NimBLE: att_handle=16
+
+I (127377) bridge: 09
+I (127690) bridge: USB -> BLE (1 bytes)
+I (127690) bridge: 49
+I (127690) NimBLE: GATT procedure initiated: notify; 
+I (127690) NimBLE: att_handle=16
+
+I (127718) bridge: USB -> BLE (1 bytes)
+I (127718) bridge: 49
+I (127718) NimBLE: GATT procedure initiated: notify; 
+I (127718) NimBLE: att_handle=16
+
+I (127740) bridge: USB -> BLE (1 bytes)
+I (127740) bridge: 49
+I (127741) NimBLE: GATT procedure initiated: notify; 
+I (127741) NimBLE: att_handle=16
+
+I (127761) bridge: USB -> BLE (1 bytes)
+I (127761) bridge: 49
+I (127761) NimBLE: GATT procedure initiated: notify; 
+I (127761) NimBLE: att_handle=16
+
+I (127778) bridge: USB -> BLE (1 bytes)
+I (127778) bridge: 49
+I (127779) NimBLE: GATT procedure initiated: notify; 
+I (127779) NimBLE: att_handle=16
+
+I (127797) bridge: USB -> BLE (1 bytes)
+I (127797) bridge: 49
+I (127797) NimBLE: GATT procedure initiated: notify; 
+I (127797) NimBLE: att_handle=16
+
+I (128058) bridge: USB -> BLE (1 bytes)
+I (128058) bridge: 49
+I (128058) NimBLE: GATT procedure initiated: notify; 
+I (128058) NimBLE: att_handle=16
+
+I (128082) bridge: USB -> BLE (1 bytes)
+I (128083) NimBLE: GATT procedure initiated: notify; 
+I (128083) NimBLE: att_handle=16
+
+I (128083) bridge: 49
+I (128103) bridge: USB -> BLE (1 bytes)
+I (128103) bridge: 49
+I (128104) NimBLE: GATT procedure initiated: notify; 
+I (128104) NimBLE: att_handle=16
+
+I (128126) bridge: USB -> BLE (1 bytes)
+I (128126) bridge: 49
+I (128126) NimBLE: GATT procedure initiated: notify; 
+I (128126) NimBLE: att_handle=16
+
+I (128148) bridge: USB -> BLE (1 bytes)
+I (128148) bridge: 49
+I (128149) NimBLE: GATT procedure initiated: notify; 
+I (128149) NimBLE: att_handle=16
+
+I (128431) bridge: USB -> BLE (1 bytes)
+I (128431) bridge: 49
+I (128431) NimBLE: GATT procedure initiated: notify; 
+I (128431) NimBLE: att_handle=16
+
+I (128460) bridge: USB -> BLE (1 bytes)
+I (128460) bridge: 49
+I (128460) NimBLE: GATT procedure initiated: notify; 
+I (128460) NimBLE: att_handle=16
+
+I (128482) bridge: USB -> BLE (1 bytes)
+I (128482) bridge: 49
+I (128482) NimBLE: GATT procedure initiated: notify; 
+I (128482) NimBLE: att_handle=16
+
+I (128500) bridge: USB -> BLE (1 bytes)
+I (128500) bridge: 49
+I (128500) NimBLE: GATT procedure initiated: notify; 
+I (128500) NimBLE: att_handle=16
+
+I (128519) bridge: USB -> BLE (1 bytes)
+I (128519) bridge: 49
+I (128519) NimBLE: GATT procedure initiated: notify; 
+I (128519) NimBLE: att_handle=16
+
+I (128538) bridge: USB -> BLE (1 bytes)
+I (128538) bridge: 49
+I (128538) NimBLE: GATT procedure initiated: notify; 
+I (128538) NimBLE: att_handle=16
+
+I (128792) bridge: USB -> BLE (1 bytes)
+I (128792) bridge: 49
+I (128793) NimBLE: GATT procedure initiated: notify; 
+I (128793) NimBLE: att_handle=16
+
+I (128820) bridge: USB -> BLE (1 bytes)
+I (128820) bridge: 49
+I (128821) NimBLE: GATT procedure initiated: notify; 
+I (128821) NimBLE: att_handle=16
+
+I (128846) bridge: USB -> BLE (1 bytes)
+I (128847) NimBLE: GATT procedure initiated: notify; 
+I (128847) NimBLE: att_handle=16
+
+I (128847) bridge: 49
+I (128873) bridge: USB -> BLE (1 bytes)
+I (128873) bridge: 49
+I (128873) NimBLE: GATT procedure initiated: notify; 
+I (128873) NimBLE: att_handle=16
+
+I (135714) bridge: USB -> BLE (1 bytes)
+I (135715) bridge: 44
+I (135715) NimBLE: GATT procedure initiated: notify; 
+I (135715) NimBLE: att_handle=16
+
+I (135739) bridge: USB -> BLE (1 bytes)
+I (135740) bridge: 44
+I (135740) NimBLE: GATT procedure initiated: notify; 
+I (135740) NimBLE: att_handle=16
+
+I (135760) bridge: USB -> BLE (1 bytes)
+I (135761) bridge: 44
+I (135761) NimBLE: GATT procedure initiated: notify; 
+I (135761) NimBLE: att_handle=16
+
+I (135779) bridge: USB -> BLE (1 bytes)
+I (135780) bridge: 44
+I (135780) NimBLE: GATT procedure initiated: notify; 
+I (135780) NimBLE: att_handle=16
+
+I (135801) bridge: USB -> BLE (1 bytes)
+I (135801) bridge: 44
+I (135801) NimBLE: GATT procedure initiated: notify; 
+I (135801) NimBLE: att_handle=16
+
+I (135833) bridge: USB -> BLE (1 bytes)
+I (135833) bridge: 44
+I (135833) NimBLE: GATT procedure initiated: notify; 
+I (135833) NimBLE: att_handle=16
+
+I (135876) bridge: USB -> BLE (1 bytes)
+I (135877) bridge: 44
+I (135877) NimBLE: GATT procedure initiated: notify; 
+I (135877) NimBLE: att_handle=16
+
+I (136056) bridge: USB -> BLE (1 bytes)
+I (136057) bridge: 44
+I (136057) NimBLE: GATT procedure initiated: notify; 
+I (136057) NimBLE: att_handle=16
+
+I (136129) bridge: USB -> BLE (1 bytes)
+I (136129) bridge: 44
+I (136129) NimBLE: GATT procedure initiated: notify; 
+I (136129) NimBLE: att_handle=16
+
+I (136170) bridge: USB -> BLE (1 bytes)
+I (136171) bridge: 44
+I (136171) NimBLE: GATT procedure initiated: notify; 
+I (136171) NimBLE: att_handle=16
+
+I (136386) bridge: USB -> BLE (1 bytes)
+I (136387) bridge: 04
+I (136387) NimBLE: GATT procedure initiated: notify; 
+I (136387) NimBLE: att_handle=16
+
+I (136422) bridge: USB -> BLE (1 bytes)
+I (136422) bridge: 04
+I (136422) NimBLE: GATT procedure initiated: notify; 
+I (136422) NimBLE: att_handle=16
+
+I (136448) bridge: USB -> BLE (1 bytes)
+I (136448) bridge: 04
+I (136448) NimBLE: GATT procedure initiated: notify; 
+I (136448) NimBLE: att_handle=16
+
+I (136476) bridge: USB -> BLE (1 bytes)
+I (136476) bridge: 04
+I (136476) NimBLE: GATT procedure initiated: notify; 
+I (136476) NimBLE: att_handle=16
+
+I (136508) bridge: USB -> BLE (1 bytes)
+I (136509) bridge: 04
+I (136509) NimBLE: GATT procedure initiated: notify; 
+I (136509) NimBLE: att_handle=16
+
+I (136539) bridge: USB -> BLE (1 bytes)
+I (136539) bridge: 04
+I (136539) NimBLE: GATT procedure initiated: notify; 
+I (136539) NimBLE: att_handle=16
+
+I (136567) bridge: USB -> BLE (1 bytes)
+I (136568) bridge: 04
+I (136568) NimBLE: GATT procedure initiated: notify; 
+I (136568) NimBLE: att_handle=16
+
+I (136606) bridge: USB -> BLE (1 bytes)
+I (136606) bridge: 04
+I (136606) NimBLE: GATT procedure initiated: notify; 
+I (136606) NimBLE: att_handle=16
+
+I (136636) bridge: USB -> BLE (1 bytes)
+I (136637) bridge: 04
+I (136637) NimBLE: GATT procedure initiated: notify; 
+I (136637) NimBLE: att_handle=16
+
+I (136660) bridge: USB -> BLE (1 bytes)
+I (136661) bridge: 04
+I (136661) NimBLE: GATT procedure initiated: notify; 
+I (136661) NimBLE: att_handle=16
+
+I (136694) bridge: USB -> BLE (1 bytes)
+I (136695) NimBLE: GATT procedure initiated: notify; 
+I (136695) NimBLE: att_handle=16
+
+I (136695) bridge: 04
+I (136722) bridge: USB -> BLE (1 bytes)
+I (136723) NimBLE: GATT procedure initiated: notify; 
+I (136723) NimBLE: att_handle=16
+
+I (136723) bridge: 04
+I (136753) bridge: USB -> BLE (1 bytes)
+I (136753) bridge: 04
+I (136753) NimBLE: GATT procedure initiated: notify; 
+I (136753) NimBLE: att_handle=16
+
+I (136782) bridge: USB -> BLE (1 bytes)
+I (136782) bridge: 04
+I (136782) NimBLE: GATT procedure initiated: notify; 
+I (136782) NimBLE: att_handle=16
+
+I (137171) bridge: USB -> BLE (1 bytes)
+I (137172) NimBLE: GATT procedure initiated: notify; 
+I (137172) NimBLE: att_handle=16
+
+I (137172) bridge: 04
+I (137193) bridge: USB -> BLE (1 bytes)
+I (137194) bridge: 04
+I (137194) NimBLE: GATT procedure initiated: notify; 
+I (137194) NimBLE: att_handle=16
+
+I (137220) bridge: USB -> BLE (1 bytes)
+I (137221) bridge: 04
+I (137221) NimBLE: GATT procedure initiated: notify; 
+I (137221) NimBLE: att_handle=16
+
+I (137253) bridge: USB -> BLE (1 bytes)
+I (137253) bridge: 04
+I (137253) NimBLE: GATT procedure initiated: notify; 
+I (137253) NimBLE: att_handle=16
+
+I (137272) bridge: USB -> BLE (1 bytes)
+I (137273) bridge: 04
+I (137273) NimBLE: GATT procedure initiated: notify; 
+I (137273) NimBLE: att_handle=16
+
+I (137285) bridge: USB -> BLE (1 bytes)
+I (137286) NimBLE: GATT procedure initiated: notify; 
+I (137286) NimBLE: att_handle=16
+
+I (137286) bridge: 04
+I (137301) bridge: USB -> BLE (1 bytes)
+I (137301) bridge: 04
+I (137301) NimBLE: GATT procedure initiated: notify; 
+I (137301) NimBLE: att_handle=16
+
+I (137360) bridge: USB -> BLE (1 bytes)
+I (137360) bridge: 04
+I (137360) NimBLE: GATT procedure initiated: notify; 
+I (137360) NimBLE: att_handle=16
+
+I (137445) bridge: USB -> BLE (1 bytes)
+I (137445) bridge: 04
+I (137445) NimBLE: GATT procedure initiated: notify; 
+I (137445) NimBLE: att_handle=16
+
+I (139976) ble: Encryption status=13
+I (150968) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (150968) bridge: bytes USB_RX=270 BLE_TX=270 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (150976) ui: UI stack watermark=1808 bytes
+I (153579) bridge: USB -> BLE (1 bytes)
+I (153579) bridge: 37
+I (153580) NimBLE: GATT procedure initiated: notify; 
+I (153580) NimBLE: att_handle=16
+
+I (153607) bridge: USB -> BLE (1 bytes)
+I (153607) bridge: 04
+I (153608) NimBLE: GATT procedure initiated: notify; 
+I (153608) NimBLE: att_handle=16
+
+I (154050) bridge: USB -> BLE (1 bytes)
+I (154050) bridge: b7
+I (154050) NimBLE: GATT procedure initiated: notify; 
+I (154050) NimBLE: att_handle=16
+
+I (155020) bridge: USB -> BLE (1 bytes)
+I (155020) bridge: 37
+I (155020) NimBLE: GATT procedure initiated: notify; 
+I (155020) NimBLE: att_handle=16
+
+I (155137) bridge: USB -> BLE (1 bytes)
+I (155137) bridge: b7
+I (155138) NimBLE: GATT procedure initiated: notify; 
+I (155138) NimBLE: att_handle=16
+
+I (156351) bridge: USB -> BLE (1 bytes)
+I (156351) bridge: 37
+I (156351) NimBLE: GATT procedure initiated: notify; 
+I (156351) NimBLE: att_handle=16
+
+I (156797) bridge: USB -> BLE (1 bytes)
+I (156797) bridge: b7
+I (156797) NimBLE: GATT procedure initiated: notify; 
+I (156797) NimBLE: att_handle=16
+
+I (158725) bridge: USB -> BLE (1 bytes)
+I (158725) bridge: 0a
+I (158725) NimBLE: GATT procedure initiated: notify; 
+I (158725) NimBLE: att_handle=16
+
+I (158902) bridge: USB -> BLE (1 bytes)
+I (158902) bridge: 8a
+I (158902) NimBLE: GATT procedure initiated: notify; 
+I (158902) NimBLE: att_handle=16
+
+I (159424) bridge: USB -> BLE (1 bytes)
+I (159424) bridge: 09
+I (159424) NimBLE: GATT procedure initiated: notify; 
+I (159424) NimBLE: att_handle=16
+
+I (159471) bridge: USB -> BLE (1 bytes)
+I (159472) bridge: 09
+I (159472) NimBLE: GATT procedure initiated: notify; 
+I (159472) NimBLE: att_handle=16
+
+I (159661) bridge: USB -> BLE (1 bytes)
+I (159661) bridge: 49
+I (159661) NimBLE: GATT procedure initiated: notify; 
+I (159661) NimBLE: att_handle=16
+
+I (159695) bridge: USB -> BLE (1 bytes)
+I (159696) bridge: 49
+I (159696) NimBLE: GATT procedure initiated: notify; 
+I (159696) NimBLE: att_handle=16
+
+I (159732) bridge: USB -> BLE (1 bytes)
+I (159733) bridge: 49
+I (159733) NimBLE: GATT procedure initiated: notify; 
+I (159733) NimBLE: att_handle=16
+
+I (159784) bridge: USB -> BLE (1 bytes)
+I (159784) bridge: 49
+I (159784) NimBLE: GATT procedure initiated: notify; 
+I (159784) NimBLE: att_handle=16
+
+I (159930) bridge: USB -> BLE (1 bytes)
+I (159930) bridge: 09
+I (159930) NimBLE: GATT procedure initiated: notify; 
+I (159930) NimBLE: att_handle=16
+
+I (159970) bridge: USB -> BLE (1 bytes)
+I (159970) bridge: 09
+I (159970) NimBLE: GATT procedure initiated: notify; 
+I (159970) NimBLE: att_handle=16
+
+I (160012) bridge: USB -> BLE (1 bytes)
+I (160013) bridge: 09
+I (160013) NimBLE: GATT procedure initiated: notify; 
+I (160013) NimBLE: att_handle=16
+
+I (160075) bridge: USB -> BLE (1 bytes)
+I (160076) bridge: 09
+I (160076) NimBLE: GATT procedure initiated: notify; 
+I (160076) NimBLE: att_handle=16
+
+I (160141) bridge: USB -> BLE (1 bytes)
+I (160142) bridge: 49
+I (160142) NimBLE: GATT procedure initiated: notify; 
+I (160142) NimBLE: att_handle=16
+
+I (160178) bridge: USB -> BLE (1 bytes)
+I (160179) NimBLE: GATT procedure initiated: notify; 
+I (160179) NimBLE: att_handle=16
+
+I (160179) bridge: 49
+I (160211) bridge: USB -> BLE (1 bytes)
+I (160212) bridge: 49
+I (160212) NimBLE: GATT procedure initiated: notify; 
+I (160212) NimBLE: att_handle=16
+
+I (160242) bridge: USB -> BLE (1 bytes)
+I (160243) bridge: 49
+I (160243) NimBLE: GATT procedure initiated: notify; 
+I (160243) NimBLE: att_handle=16
+
+I (160384) bridge: USB -> BLE (1 bytes)
+I (160385) bridge: 09
+I (160385) NimBLE: GATT procedure initiated: notify; 
+I (160385) NimBLE: att_handle=16
+
+I (160422) bridge: USB -> BLE (1 bytes)
+I (160423) bridge: 09
+I (160423) NimBLE: GATT procedure initiated: notify; 
+I (160423) NimBLE: att_handle=16
+
+I (160468) bridge: USB -> BLE (1 bytes)
+I (160469) NimBLE: GATT procedure initiated: notify; 
+I (160469) NimBLE: att_handle=16
+
+I (160470) bridge: 09
+I (160593) bridge: USB -> BLE (1 bytes)
+I (160594) bridge: 49
+I (160594) NimBLE: GATT procedure initiated: notify; 
+I (160594) NimBLE: att_handle=16
+
+I (160627) bridge: USB -> BLE (1 bytes)
+I (160627) bridge: 49
+I (160627) NimBLE: GATT procedure initiated: notify; 
+I (160627) NimBLE: att_handle=16
+
+I (160657) bridge: USB -> BLE (1 bytes)
+I (160658) bridge: 49
+I (160658) NimBLE: GATT procedure initiated: notify; 
+I (160658) NimBLE: att_handle=16
+
+I (161371) bridge: USB -> BLE (1 bytes)
+I (161371) bridge: 37
+I (161371) NimBLE: GATT procedure initiated: notify; 
+I (161371) NimBLE: att_handle=16
+
+I (161518) bridge: USB -> BLE (1 bytes)
+I (161518) bridge: b7
+I (161518) NimBLE: GATT procedure initiated: notify; 
+I (161519) NimBLE: att_handle=16
+
+I (163785) bridge: USB -> BLE (1 bytes)
+I (163785) bridge: 0a
+I (163785) NimBLE: GATT procedure initiated: notify; 
+I (163786) NimBLE: att_handle=16
+
+I (163916) bridge: USB -> BLE (1 bytes)
+I (163916) bridge: 8a
+I (163916) NimBLE: GATT procedure initiated: notify; 
+I (163917) NimBLE: att_handle=16
+
+I (167541) bridge: USB -> BLE (1 bytes)
+I (167542) bridge: 0a
+I (167542) NimBLE: GATT procedure initiated: notify; 
+I (167542) NimBLE: att_handle=16
+
+I (167705) bridge: USB -> BLE (1 bytes)
+I (167705) bridge: 8a
+I (167705) NimBLE: GATT procedure initiated: notify; 
+I (167706) NimBLE: att_handle=16
+
+I (180971) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (180971) bridge: bytes USB_RX=305 BLE_TX=305 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (180979) ui: UI stack watermark=1808 bytes
+I (210973) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (210973) bridge: bytes USB_RX=305 BLE_TX=305 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (210981) ui: UI stack watermark=1808 bytes
+I (240975) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (240975) bridge: bytes USB_RX=305 BLE_TX=305 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (240983) ui: UI stack watermark=1808 bytes
+I (270977) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (270977) bridge: bytes USB_RX=305 BLE_TX=305 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (270985) ui: UI stack watermark=1808 bytes
+I (300979) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (300979) bridge: bytes USB_RX=305 BLE_TX=305 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (300987) ui: UI stack watermark=1808 bytes
+I (330981) bridge: USB=ready BLE=connected notify=1 MTU=247 queued=0/0 heap=8596815 internal=211995 mbufs=48
+I (330981) bridge: bytes USB_RX=305 BLE_TX=305 BLE_RX=134 USB_TX=134 drops=0 rejects=0 rules=1 notify_errors=0
+I (330989) ui: UI stack watermark=1808 bytes

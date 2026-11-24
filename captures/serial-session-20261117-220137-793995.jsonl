@@ -1,0 +1,60 @@
+{"t_us": 6268, "kind": "metadata", "port": "/dev/cu.usbmodemTourBox1", "baud": 115200, "framing": "8N1", "platform": "macOS-27.2-arm64-arm-64bit-Mach-O", "captured_at": "2026-11-17T22:01:37.800290+08:00", "note": "tty read chunks are not USB packet boundaries; config-zero is manual only", "config_source": "tuxbox 2f4c5adce36dee6ebc7d080ebfbd82d88d6c3f1f haptic.py"}
+{"t_us": 8744, "kind": "control_lines", "dtr_requested": true, "rts_requested": true, "ioctl_ok": true}
+{"t_us": 6959289, "kind": "tx", "command": "unlock", "length": 8, "hex": "55 00 07 88 94 00 1a fe"}
+{"t_us": 6959880, "kind": "rx", "length": 26, "hex": "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00"}
+{"t_us": 14057117, "kind": "configuration_test", "template": "tuxbox-zero", "length": 94, "hex": "b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe"}
+{"t_us": 14057356, "kind": "tx", "command": "config-zero", "length": 94, "hex": "b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe"}
+{"t_us": 27243611, "kind": "mark", "label": "scroll_up"}
+{"t_us": 30634769, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 30687605, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 30737076, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 30789580, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 30837545, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 30902586, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 30983076, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 32117142, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 32213611, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 32277570, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 32378593, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 38537502, "kind": "mark", "label": "scroll_down"}
+{"t_us": 40010113, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 40064523, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 40097509, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 40138474, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 40239545, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 40300998, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 40997557, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 41064018, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 41119511, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 41175998, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 41249976, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 41308518, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 41420500, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 47080430, "kind": "mark", "label": "knob_cw"}
+{"t_us": 48897528, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49002561, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49079443, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49159450, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49265497, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49359958, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49442409, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49508408, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49591451, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49676988, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49766435, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 49876459, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 60982156, "kind": "mark", "label": "knob_ccw"}
+{"t_us": 62621428, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 62710901, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 62828868, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 62913344, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 63000330, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 63108843, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 63201846, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 63330362, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 63438854, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 63647392, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 71795460, "kind": "mark", "label": "tall"}
+{"t_us": 74146331, "kind": "rx", "length": 1, "hex": "00"}
+{"t_us": 74379799, "kind": "rx", "length": 1, "hex": "80"}
+{"t_us": 81407843, "kind": "closed"}

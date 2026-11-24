@@ -1,0 +1,6 @@
+START: TourBox BLE Probe
+INITIAL BLUETOOTH state=0 authorization=3
+BLUETOOTH state=5 authorization=3
+FOUND TBE Lite id=48F9094E-81DF-CACC-DD29-D0BE7584B1D3 services=[FFF0] RSSI=-44
+MANUFACTURER 54 42 45 20 f8 5b 1b 97 c8 84 00 00 00 00 00 00
+PASS: passive advertisement inspection complete

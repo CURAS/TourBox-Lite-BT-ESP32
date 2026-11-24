@@ -1,0 +1,69 @@
+{"t_us": 6837, "kind": "metadata", "port": "/dev/cu.usbmodemTourBox1", "baud": 115200, "framing": "8N1", "platform": "macOS-27.2-arm64-arm-64bit-Mach-O", "captured_at": "2026-11-17T21:48:47.807949+08:00", "note": "tty read chunks are not USB packet boundaries; no config packet sent"}
+{"t_us": 9354, "kind": "control_lines", "dtr_requested": true, "rts_requested": true, "ioctl_ok": true}
+{"t_us": 9301833, "kind": "tx", "length": 8, "hex": "55 00 07 88 94 00 1a fe"}
+{"t_us": 9302452, "kind": "rx", "length": 26, "hex": "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00"}
+{"t_us": 23509149, "kind": "mark", "label": "tall"}
+{"t_us": 24429128, "kind": "rx", "length": 1, "hex": "00"}
+{"t_us": 24591600, "kind": "rx", "length": 1, "hex": "80"}
+{"t_us": 25935096, "kind": "rx", "length": 1, "hex": "00"}
+{"t_us": 26108598, "kind": "rx", "length": 1, "hex": "80"}
+{"t_us": 27105106, "kind": "rx", "length": 1, "hex": "00"}
+{"t_us": 27351560, "kind": "rx", "length": 1, "hex": "80"}
+{"t_us": 33657091, "kind": "mark", "label": "top"}
+{"t_us": 35245554, "kind": "rx", "length": 1, "hex": "02"}
+{"t_us": 35433500, "kind": "rx", "length": 1, "hex": "82"}
+{"t_us": 36507022, "kind": "rx", "length": 1, "hex": "02"}
+{"t_us": 36670496, "kind": "rx", "length": 1, "hex": "82"}
+{"t_us": 37658018, "kind": "rx", "length": 1, "hex": "02"}
+{"t_us": 37833983, "kind": "rx", "length": 1, "hex": "82"}
+{"t_us": 42300763, "kind": "mark", "label": "short"}
+{"t_us": 44962960, "kind": "rx", "length": 1, "hex": "03"}
+{"t_us": 45108923, "kind": "rx", "length": 1, "hex": "83"}
+{"t_us": 45975421, "kind": "rx", "length": 1, "hex": "03"}
+{"t_us": 46152432, "kind": "rx", "length": 1, "hex": "83"}
+{"t_us": 46817959, "kind": "rx", "length": 1, "hex": "03"}
+{"t_us": 47048939, "kind": "rx", "length": 1, "hex": "83"}
+{"t_us": 50881611, "kind": "mark", "label": "c1"}
+{"t_us": 52093422, "kind": "rx", "length": 1, "hex": "22"}
+{"t_us": 52283444, "kind": "rx", "length": 1, "hex": "a2"}
+{"t_us": 53081386, "kind": "rx", "length": 1, "hex": "22"}
+{"t_us": 53273876, "kind": "rx", "length": 1, "hex": "a2"}
+{"t_us": 54366378, "kind": "rx", "length": 1, "hex": "22"}
+{"t_us": 54651369, "kind": "rx", "length": 1, "hex": "a2"}
+{"t_us": 58658925, "kind": "mark", "label": "c2"}
+{"t_us": 59867846, "kind": "rx", "length": 1, "hex": "23"}
+{"t_us": 60029818, "kind": "rx", "length": 1, "hex": "a3"}
+{"t_us": 61064820, "kind": "rx", "length": 1, "hex": "23"}
+{"t_us": 61261293, "kind": "rx", "length": 1, "hex": "a3"}
+{"t_us": 62249345, "kind": "rx", "length": 1, "hex": "23"}
+{"t_us": 62437306, "kind": "rx", "length": 1, "hex": "a3"}
+{"t_us": 66918836, "kind": "mark", "label": "tour"}
+{"t_us": 68667285, "kind": "rx", "length": 1, "hex": "2a"}
+{"t_us": 68866768, "kind": "rx", "length": 1, "hex": "aa"}
+{"t_us": 69785243, "kind": "rx", "length": 1, "hex": "2a"}
+{"t_us": 69955714, "kind": "rx", "length": 1, "hex": "aa"}
+{"t_us": 70963748, "kind": "rx", "length": 1, "hex": "2a"}
+{"t_us": 71185221, "kind": "rx", "length": 1, "hex": "aa"}
+{"t_us": 80796285, "kind": "mark", "label": "scroll_click"}
+{"t_us": 85665653, "kind": "rx", "length": 1, "hex": "0a"}
+{"t_us": 85858095, "kind": "rx", "length": 1, "hex": "8a"}
+{"t_us": 86765644, "kind": "rx", "length": 1, "hex": "0a"}
+{"t_us": 86967619, "kind": "rx", "length": 1, "hex": "8a"}
+{"t_us": 88003120, "kind": "rx", "length": 1, "hex": "0a"}
+{"t_us": 88230091, "kind": "rx", "length": 1, "hex": "8a"}
+{"t_us": 97500201, "kind": "mark", "label": "knob_click"}
+{"t_us": 99279545, "kind": "rx", "length": 1, "hex": "37"}
+{"t_us": 99448002, "kind": "rx", "length": 1, "hex": "b7"}
+{"t_us": 100531525, "kind": "rx", "length": 1, "hex": "37"}
+{"t_us": 100752486, "kind": "rx", "length": 1, "hex": "b7"}
+{"t_us": 101546031, "kind": "rx", "length": 1, "hex": "37"}
+{"t_us": 101764987, "kind": "rx", "length": 1, "hex": "b7"}
+{"t_us": 109658866, "kind": "mark", "label": "scroll_up"}
+{"t_us": 143375941, "kind": "mark", "label": "scroll_down"}
+{"t_us": 158564659, "kind": "mark", "label": "knob_cw"}
+{"t_us": 172800126, "kind": "mark", "label": "knob_ccw"}
+{"t_us": 186969392, "kind": "mark", "label": "idle"}
+{"t_us": 215032243, "kind": "mark", "label": "tall_knob"}
+{"t_us": 219855162, "kind": "rx", "length": 1, "hex": "00"}
+{"t_us": 228848093, "kind": "rx", "length": 1, "hex": "80"}
+{"t_us": 235509836, "kind": "closed"}

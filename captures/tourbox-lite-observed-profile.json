@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "scope": "Single physical TourBox Lite, four manual macOS sessions including same-power serial reopen as instructed; firmware runtime and official BLE compatibility not yet tested",
+  "evidence": {
+    "descriptors": "usb-descriptors-20261117-213903-999905.json",
+    "unlock_only": "serial-session-20261117-214847-801088.jsonl",
+    "unlock_and_config": "serial-session-20261117-220137-793995.jsonl",
+    "combo_configured": "serial-session-20261117-221137-082372.jsonl",
+    "same_power_serial_reopen": "serial-session-20261117-221234-063936.jsonl"
+  },
+  "usb": {
+    "vid": "CAFE",
+    "pid": "4001",
+    "bcdDevice": "0200",
+    "cdc_control_interface": 0,
+    "cdc_data_interface": 1,
+    "bulk_out": {
+      "address": "02",
+      "max_packet_size": 64
+    },
+    "bulk_in": {
+      "address": "82",
+      "max_packet_size": 64
+    },
+    "interrupt_in": {
+      "address": "81",
+      "max_packet_size": 8
+    }
+  },
+  "serial_observed_working": {
+    "baud": 115200,
+    "framing": "8N1",
+    "dtr_request": true,
+    "rts_request": true,
+    "control_line_necessity_tested": false
+  },
+  "initialization": {
+    "unlock_hex": "55 00 07 88 94 00 1a fe",
+    "unlock_reply_length_observed": 26,
+    "unlock_reply_samples": [
+      "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00",
+      "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00",
+      "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00",
+      "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00"
+    ],
+    "reply_field_semantics_known": false,
+    "reply_sample_must_not_be_fabricated": true,
+    "configuration_hex": "b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe",
+    "configuration_length": 94,
+    "configuration_effect_observed": "Unlock-only baseline had no rotary events; zero-parameter config enabled all four directions; in the instructed same-power serial reopen trial, clockwise knob steps were already available after unlock, and repeating zero config preserved them",
+    "dedicated_configuration_reply_observed": false,
+    "quiet_interval_before_first_mark_us": 13186255,
+    "post_configuration_settle_minimum_tested": false,
+    "nonzero_configuration_tested": false,
+    "unlock_reply_sample_count": 4,
+    "all_observed_unlock_replies_equal": true,
+    "configuration_resend_observed_working": true
+  },
+  "buttons": {
+    "tall": {
+      "press": "00",
+      "release": "80",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "top": {
+      "press": "02",
+      "release": "82",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "short": {
+      "press": "03",
+      "release": "83",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "c1": {
+      "press": "22",
+      "release": "A2",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "c2": {
+      "press": "23",
+      "release": "A3",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "tour": {
+      "press": "2A",
+      "release": "AA",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "scroll_click": {
+      "press": "0A",
+      "release": "8A",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    },
+    "knob_click": {
+      "press": "37",
+      "release": "B7",
+      "observed_press_count": 3,
+      "observed_release_count": 3
+    }
+  },
+  "rotary": {
+    "scroll_up": {
+      "step_code": "49",
+      "step_count": 11,
+      "stop_code_observed": false
+    },
+    "scroll_down": {
+      "step_code": "09",
+      "step_count": 13,
+      "stop_code_observed": false
+    },
+    "knob_cw": {
+      "step_code": "44",
+      "step_count": 12,
+      "stop_code_observed": false
+    },
+    "knob_ccw": {
+      "step_code": "04",
+      "step_count": 10,
+      "stop_code_observed": false
+    }
+  },
+  "pending": [
+    "additional cold-start repetitions",
+    "other modifier combinations and multi-button chords",
+    "control-line necessity and minimum initialization delays",
+    "firmware USB/BLE hardware tests",
+    "official Console BLE protocol and compatibility",
+    "real current measurement"
+  ],
+  "combos": {
+    "tall_knob": {
+      "press_code": "00",
+      "cw_code": "44",
+      "ccw_code": "04",
+      "release_code": "80",
+      "observed_cw_steps": 6,
+      "observed_ccw_steps": 6,
+      "sequence_hex": "00 44 44 44 44 44 44 04 04 04 04 04 04 80",
+      "extra_combo_code_observed": false
+    },
+    "top_scroll": {
+      "press_code": "02",
+      "up_code": "49",
+      "down_code": "09",
+      "release_code": "82",
+      "observed_up_steps": 8,
+      "observed_down_steps": 9,
+      "sequence_hex": "02 49 49 49 49 49 49 49 49 09 09 09 09 09 09 09 09 09 82",
+      "extra_combo_code_observed": false
+    }
+  },
+  "serial_reopen": {
+    "test_procedure": "Console kept closed; capture exited and restarted without unplugging USB, as instructed",
+    "unlock_reply_received": true,
+    "cw_steps_before_reconfig": 11,
+    "cw_steps_after_reconfig": 11,
+    "configuration_retention_observed": true,
+    "firmware_usb_handle_close_reopen_tested": false,
+    "ble_reconnect_tested": false,
+    "configuration_nonvolatile_persistence_tested": false
+  }
+}

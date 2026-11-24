@@ -1,0 +1,24 @@
+# ESP-IDF generated build, downloaded dependencies and local configuration
+/build/
+/build-*/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/tmp/
+/dist/
+
+# Local editor / Python environments and caches
+/.vscode/
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# macOS metadata
+.DS_Store
+._*
+
+# Keep dependencies.lock, sdkconfig.defaults, tests, captures and docs/logs tracked.

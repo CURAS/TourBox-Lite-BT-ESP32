@@ -1,0 +1,28 @@
+Native setBTNotify OK
+setNamePrefix,name:TourBox Elite
+setPairMode 1
+FILTER TourBox Lite -> 0
+manufactureData prefix is (TBE )
+Is New Device name=TBE Lite tbAddr=f85b1b97c884 pcAddr=000000000000
+local PC BT Addr:d011e56ed1b3
+SCAN BRDCST:TBE Lite:f85b1b97c884
+FILTER TBE Lite -> 0
+manufactureData prefix is (TBE )
+Is New Device name=TourBox Elite tbAddr=f85b1b97c884 pcAddr=000000000000
+SCAN BRDCST:TourBox Elite:f85b1b97c884
+FILTER TourBox Elite -> 0
+setValidDeviceAddrList count=1
+setValidDeviceAddrList f85b1b97c884
+manufactureData prefix is (TBE )
+Is New Device name=TBE Lite tbAddr=f85b1b97c884 pcAddr=000000000000
+FOUND tbaddr=f85b1b97c884 in WhiteList
+is pair mode,try to connect it
+CURRENT TB=f85b1b97c884
+SELECTED FILTER TBE Lite -> 1
+setPairMode 0
+manufactureData prefix is (TBE )
+Is New Device name=TBE Lite tbAddr=f85b1b97c884 pcAddr=d011e56ed1b3
+FOUND tbaddr=f85b1b97c884 in WhiteList
+Is direct ADV,aim PC BT addr is:d011e56ed1b3
+CURRENT TB=f85b1b97c884
+DIRECTED AUTO FILTER TBE Lite -> 1

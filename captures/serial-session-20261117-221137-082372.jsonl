@@ -1,0 +1,42 @@
+{"t_us": 6401, "kind": "metadata", "port": "/dev/cu.usbmodemTourBox1", "baud": 115200, "framing": "8N1", "platform": "macOS-27.2-arm64-arm-64bit-Mach-O", "captured_at": "2026-11-17T22:11:37.088797+08:00", "note": "tty read chunks are not USB packet boundaries; config-zero is manual only", "config_source": "tuxbox 2f4c5adce36dee6ebc7d080ebfbd82d88d6c3f1f haptic.py"}
+{"t_us": 8942, "kind": "control_lines", "dtr_requested": true, "rts_requested": true, "ioctl_ok": true}
+{"t_us": 3512692, "kind": "tx", "command": "unlock", "length": 8, "hex": "55 00 07 88 94 00 1a fe"}
+{"t_us": 3513307, "kind": "rx", "length": 26, "hex": "07 e0 5c d1 c1 b2 ca 5e 9e a1 5f 26 33 6c f7 0b 00 00 00 02 00 03 03 01 00 00"}
+{"t_us": 9019558, "kind": "configuration_test", "template": "tuxbox-zero", "length": 94, "hex": "b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe"}
+{"t_us": 9019829, "kind": "tx", "command": "config-zero", "length": 94, "hex": "b5 00 5d 04 00 05 00 06 00 07 00 08 00 09 00 0b 00 0c 00 0d 00 0e 00 0f 00 26 00 27 00 28 00 29 00 3b 00 3c 00 3d 00 3e 00 3f 00 40 00 41 00 42 00 43 00 44 00 45 00 46 00 47 00 48 00 49 00 4a 00 4b 00 4c 00 4d 00 4e 00 4f 00 50 00 51 00 52 00 53 00 54 00 a8 00 a9 00 aa 00 ab 00 fe"}
+{"t_us": 23475162, "kind": "mark", "label": "tall_knob_configured"}
+{"t_us": 24266245, "kind": "rx", "length": 1, "hex": "00"}
+{"t_us": 25335701, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 25393149, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 25443591, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 25489057, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 25543104, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 25650162, "kind": "rx", "length": 1, "hex": "44"}
+{"t_us": 26330142, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 26381604, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 26429079, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 26503103, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 26584120, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 26648062, "kind": "rx", "length": 1, "hex": "04"}
+{"t_us": 27644131, "kind": "rx", "length": 1, "hex": "80"}
+{"t_us": 37537179, "kind": "mark", "label": "top_scroll_configured"}
+{"t_us": 40361558, "kind": "rx", "length": 1, "hex": "02"}
+{"t_us": 42506546, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42567464, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42609493, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42649017, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42674448, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42713421, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42780458, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 42900472, "kind": "rx", "length": 1, "hex": "49"}
+{"t_us": 43672505, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43718943, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43750925, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43801410, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43826967, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43864401, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43925469, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 43969941, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 44036959, "kind": "rx", "length": 1, "hex": "09"}
+{"t_us": 45043998, "kind": "rx", "length": 1, "hex": "82"}
+{"t_us": 53169487, "kind": "closed"}

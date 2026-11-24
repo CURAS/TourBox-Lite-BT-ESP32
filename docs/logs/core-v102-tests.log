@@ -1,0 +1,11 @@
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/ramda/Documents/test/TourBox-Lite-BT-ESP32-NEW/tmp/host-tests
+[100%] Built target test_bridge_core
+Test project /Users/ramda/Documents/test/TourBox-Lite-BT-ESP32-NEW/tmp/host-tests
+    Start 1: bridge_core
+1/1 Test #1: bridge_core ......................   Passed    0.11 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.12 sec

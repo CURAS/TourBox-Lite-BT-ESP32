@@ -1,0 +1,149 @@
+{
+  "collected_at": "2026-11-17T21:39:03.992905+08:00",
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "library": "/opt/homebrew/lib/libusb-1.0.dylib",
+  "method": "libusb cached device/config descriptors; no device open or claim",
+  "devices": [
+    {
+      "device_descriptor": {
+        "bLength": 18,
+        "bDescriptorType": 1,
+        "bcdUSB": 512,
+        "bDeviceClass": 2,
+        "bDeviceSubClass": 0,
+        "bDeviceProtocol": 0,
+        "bMaxPacketSize0": 64,
+        "idVendor": 51966,
+        "idProduct": 16385,
+        "bcdDevice": 512,
+        "iManufacturer": 1,
+        "iProduct": 2,
+        "iSerialNumber": 3,
+        "bNumConfigurations": 1
+      },
+      "usb_speed_code": 2,
+      "configurations": [
+        {
+          "bLength": 9,
+          "bDescriptorType": 2,
+          "wTotalLength": 75,
+          "bNumInterfaces": 2,
+          "bConfigurationValue": 1,
+          "iConfiguration": 0,
+          "bmAttributes": 128,
+          "MaxPower": 50,
+          "extra_hex": "08 0b 00 02 02 02 00 00",
+          "extra_descriptors": [
+            {
+              "type": 11,
+              "hex": "08 0b 00 02 02 02 00 00"
+            }
+          ],
+          "interfaces": [
+            {
+              "bLength": 9,
+              "bDescriptorType": 4,
+              "bInterfaceNumber": 0,
+              "bAlternateSetting": 0,
+              "bNumEndpoints": 1,
+              "bInterfaceClass": 2,
+              "bInterfaceSubClass": 2,
+              "bInterfaceProtocol": 0,
+              "iInterface": 4,
+              "extra_hex": "05 24 00 20 01 05 24 01 00 01 04 24 02 02 05 24 06 00 01",
+              "extra_descriptors": [
+                {
+                  "type": 36,
+                  "hex": "05 24 00 20 01",
+                  "cdc_subtype": 0,
+                  "cdc_version": 288
+                },
+                {
+                  "type": 36,
+                  "hex": "05 24 01 00 01",
+                  "cdc_subtype": 1,
+                  "capabilities": 0,
+                  "data_interface": 1
+                },
+                {
+                  "type": 36,
+                  "hex": "04 24 02 02",
+                  "cdc_subtype": 2,
+                  "acm_capabilities": 2
+                },
+                {
+                  "type": 36,
+                  "hex": "05 24 06 00 01",
+                  "cdc_subtype": 6,
+                  "master_interface": 0,
+                  "slave_interfaces": [
+                    1
+                  ]
+                }
+              ],
+              "endpoints": [
+                {
+                  "bLength": 7,
+                  "bDescriptorType": 5,
+                  "bEndpointAddress": 129,
+                  "bmAttributes": 3,
+                  "wMaxPacketSize": 8,
+                  "bInterval": 16,
+                  "bRefresh": 0,
+                  "bSynchAddress": 0,
+                  "extra_hex": "",
+                  "extra_descriptors": [],
+                  "direction": "IN",
+                  "transfer_type": "INTERRUPT"
+                }
+              ]
+            },
+            {
+              "bLength": 9,
+              "bDescriptorType": 4,
+              "bInterfaceNumber": 1,
+              "bAlternateSetting": 0,
+              "bNumEndpoints": 2,
+              "bInterfaceClass": 10,
+              "bInterfaceSubClass": 0,
+              "bInterfaceProtocol": 0,
+              "iInterface": 0,
+              "extra_hex": "",
+              "extra_descriptors": [],
+              "endpoints": [
+                {
+                  "bLength": 7,
+                  "bDescriptorType": 5,
+                  "bEndpointAddress": 2,
+                  "bmAttributes": 2,
+                  "wMaxPacketSize": 64,
+                  "bInterval": 0,
+                  "bRefresh": 0,
+                  "bSynchAddress": 0,
+                  "extra_hex": "",
+                  "extra_descriptors": [],
+                  "direction": "OUT",
+                  "transfer_type": "BULK"
+                },
+                {
+                  "bLength": 7,
+                  "bDescriptorType": 5,
+                  "bEndpointAddress": 130,
+                  "bmAttributes": 2,
+                  "wMaxPacketSize": 64,
+                  "bInterval": 0,
+                  "bRefresh": 0,
+                  "bSynchAddress": 0,
+                  "extra_hex": "",
+                  "extra_descriptors": [],
+                  "direction": "IN",
+                  "transfer_type": "BULK"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

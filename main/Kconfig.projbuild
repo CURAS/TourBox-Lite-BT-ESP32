@@ -1,0 +1,131 @@
+menu "TourBox USB to BLE bridge"
+    config TB_USB_VID
+        hex "Preferred USB vendor ID"
+        default 0xCAFE
+        range 0x0001 0xFFFF
+    config TB_USB_PID
+        hex "Preferred USB product ID"
+        default 0x4001
+        range 0x0001 0xFFFF
+    config TB_USB_ANY_CDC
+        bool "Also accept unknown CDC-ACM devices"
+        default y
+        help
+            Enable for Lite hardware revisions with unknown VID/PID.
+            Only connect the intended TourBox to the native USB port.
+    config TB_USB_INTERFACE
+        int "CDC communication interface number"
+        default 0
+        range 0 255
+    config TB_USB_BAUDRATE
+        int "CDC baud rate (8N1)"
+        default 115200
+        range 1200 3000000
+    config TB_USB_TX_TIMEOUT_MS
+        int "USB send timeout in milliseconds"
+        default 250
+        range 50 1000
+    config TB_USB_AUTO_UNLOCK
+        bool "Send known unlock sequence on USB connection"
+        default n
+        help
+            Normal mode forwards the host's unlock command. Enable this
+            for USB-only bring-up; the initial reply is discarded without
+            an active BLE notification subscription.
+    config TB_LITE_ZERO_CONFIG
+        bool "Normalize rotary configuration for the captured CAFE:4001 Lite"
+        default y
+        help
+            Replace only the complete captured 94-byte B5 configuration
+            layout with its verified zero-parameter template. Real samples
+            show unlock alone enables buttons but not rotary step events.
+            Other devices, commands, replies and input bytes pass unchanged.
+    config TB_BLE_DEVICE_NAME
+        string "BLE complete local name (at most 26 UTF-8 bytes)"
+        default "TBE Lite"
+        help
+            The installed macOS Console accepts its legacy TBE prefix.
+            TourBox Lite alone is filtered by its default discovery policy.
+            With Console advertising enabled, use at most 8 UTF-8 bytes so
+            the complete name and manufacturer data fit the primary advert.
+    config TB_BLE_STATIC_RANDOM_ADDRESS
+        bool "Use a stable chip-derived static random BLE identity"
+        default y
+        help
+            Avoid stale macOS peripheral-name caches from development firmware.
+            The address is deterministic and remains stable across restarts.
+    config TB_BLE_CONSOLE_ADVERTISING
+        bool "Include verified TourBox Console manufacturer discovery data"
+        default y
+        help
+            Advertise TBE signature, the bridge BLE identity, and a zero
+            target host address for pairing. The complete short name and
+            manufacturer data share the primary packet; FFF0 is included
+            in the scan response for standard BLE scanners.
+    config TB_BLE_HOST_TARGET_ADVERTISING
+        bool "Alternate paired host and general Console discovery advertising"
+        default y
+        depends on TB_BLE_CONSOLE_ADVERTISING
+        help
+            Once bonded, advertise the real saved public host identity for
+            5 seconds so Console can reconnect automatically, then a zero
+            target for 2 seconds so its manual pairing list can find the device.
+            Before pairing, use general discovery continuously. Disable to
+            use general discovery only; pairing keys still persist.
+    config TB_BLE_SERVICE_UUID
+        string "TourBox service UUID"
+        default "0000fff0-0000-1000-8000-00805f9b34fb"
+    config TB_BLE_NOTIFY_UUID
+        string "TourBox TX / notification UUID"
+        default "0000fff1-0000-1000-8000-00805f9b34fb"
+    config TB_BLE_WRITE_UUID
+        string "TourBox RX / command UUID"
+        default "0000fff2-0000-1000-8000-00805f9b34fb"
+    config TB_BLE_APPEARANCE
+        int "GAP appearance (0 = unspecified)"
+        default 0
+        range 0 65535
+    config TB_BLE_REQUIRE_ENCRYPTION
+        bool "Require encrypted access to TourBox characteristics"
+        default y
+        help
+            Bonding and Secure Connections are enabled in either mode.
+            Enable after validating the host's pairing behavior.
+    config TB_BLE_DIS
+        bool "Expose Device Information Service"
+        default y
+    config TB_BLE_BATTERY
+        bool "Expose Battery Service (fixed 100 percent)"
+        default y
+    config TB_PROTO_RULES
+        bool "Apply captured protocol rules from protocol_rules.c"
+        default n
+        help
+            No undocumented responses are enabled by default. Add verified
+            byte patterns and replies/replacements to protocol_rules.c.
+    config TB_PROTO_RULE_TIMEOUT_MS
+        int "Flush incomplete rule prefixes after milliseconds"
+        depends on TB_PROTO_RULES
+        default 20
+        range 1 1000
+    config TB_PROTO_HEXDUMP_DEBUG
+        bool "Log both directions as hex (deferred from callbacks)"
+        default n
+    choice TB_LED_BOARD
+        prompt "Board RGB LED pin"
+        default TB_LED_GPIO48
+        config TB_LED_GPIO38
+            bool "DevKitC-1 v1.1: GPIO38"
+        config TB_LED_GPIO48
+            bool "DevKitC-1 v1.0: GPIO48"
+        config TB_LED_DISABLED
+            bool "Disable RGB LED"
+    endchoice
+    config TB_LED_BRIGHTNESS
+        int "RGB LED maximum brightness (0-255)"
+        default 12
+        range 1 255
+    config TB_LED_ACTIVITY
+        bool "Flash cyan on data activity"
+        default y
+endmenu
